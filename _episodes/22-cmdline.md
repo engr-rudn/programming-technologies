@@ -84,7 +84,7 @@ save the following in a text file called `sys_version.py`:
 
 ~~~
 import sys
-print(f'version is  {sys.version}')
+print('version is', sys.version)
 ~~~
 {: .language-python}
 
@@ -109,7 +109,7 @@ Create another file called `argv_list.py` and save the following text to it.
 
 ~~~
 import sys
-print(f'sys.argv is {sys.argv}')
+print('sys.argv is', sys.argv)
 ~~~
 {: .language-python}
 
@@ -564,7 +564,7 @@ count = 0
 for line in sys.stdin:
     count += 1
 
-print(f'{count} lines in standard input')
+print(count, 'lines in standard input')
 ~~~
 {: .language-python}
 
@@ -924,13 +924,13 @@ the program now does everything we set out to do.
 > >         print('Only 1 file specified on input')
 > >     else:
 > >         nrow0, ncol0 = row_col_count(filenames[0])
-> >         print(f'First file {filenames[0]}: {nrow0} rows and {ncol0} columns')
+> >         print('First file %s: %d rows and %d columns' % (filenames[0], nrow0, ncol0))
 > >         for filename in filenames[1:]:
 > >             nrow, ncol = row_col_count(filename)
 > >             if nrow != nrow0 or ncol != ncol0:
-> >                 print(f'File {filename} does not check: {nrow} rows and {ncol} columns')
+> >                 print('File %s does not check: %d rows and %d columns' % (filename, nrow, ncol))
 > >             else:
-> >                 print(f'File {filename} checks')
+> >                 print('File %s checks' % filename)
 > >         return
 > >
 > > def row_col_count(filename):
@@ -969,13 +969,13 @@ the program now does everything we set out to do.
 > >
 > >     if len(filenames) == 0: # no filenames, just stdin
 > >         sum_nlines = count_file_like(sys.stdin)
-> >         print(f'stdin: {sum_nlines}')
+> >         print('stdin: %d' % sum_nlines)
 > >     else:
 > >         for filename in filenames:
 > >             nlines = count_file(filename)
-> >             print(f'{filename} {nlines}')
+> >             print('%s %d' % (filename, nlines))
 > >             sum_nlines += nlines
-> >         print(f'total: {sum_nlines}')
+> >         print('total: %d' % sum_nlines)
 > >
 > > def count_file(filename):
 > >     """count the number of lines in a file"""
