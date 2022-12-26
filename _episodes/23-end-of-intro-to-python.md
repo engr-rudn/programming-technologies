@@ -1,5 +1,5 @@
 ---
-title: ___________End-of-intro-to-python______________
+title: _End-of-intro-to-python______________
 
 questions:
 - "End of the course Introduction to Python Programming"
