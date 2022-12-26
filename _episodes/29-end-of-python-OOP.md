@@ -1,4 +1,7 @@
 ---
-title: oooooooooo---End--of--python--OOP---oooooooooo
+title: ___________End-of-python-OOP______________
+
+questions:
+- "End of the course Python OOP"
 
 ---
