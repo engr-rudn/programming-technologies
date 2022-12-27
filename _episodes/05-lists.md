@@ -11,6 +11,7 @@ objectives:
 - "Append values to an existing list"
 - "Reorder and slice list elements"
 - "Create and manipulate nested lists"
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/EbfgpEoJIMJKtzXWL8n3tPkBbgqpRqpBtC7CyAP3H5fxhg?e=pFHgPC' target='_blank'> View Lecture Video</a>"
 keypoints:
 - "`[value1, value2, value3, ...]` creates a list."
 - "Lists can contain any Python object, including lists (i.e., list of lists)."

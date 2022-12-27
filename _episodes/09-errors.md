@@ -7,8 +7,9 @@ questions:
 - "How can I handle errors in Python programs?"
 objectives:
 - "To be able to read a traceback, and determine where the error took place and what type it is."
-- "To be able to describe the types of situations in which syntax errors,
-   indentation errors, name errors, index errors, and missing file errors occur."
+- "To be able to describe the types of situations in which syntax errors,indentation errors, name errors, index errors, and missing file errors occur."
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/EVwGuB0TlzZHiwQsWUBs53QB0-fVDk8zyxPv8EdOqLLEkA?e=px94tZ' target='_blank'> View Lecture Video</a>"
+
 keypoints:
 - "Tracebacks can look intimidating, but they give us a lot of useful information about
    what went wrong in our program, including where the error occurred and

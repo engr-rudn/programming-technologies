@@ -12,6 +12,8 @@ objectives:
 - "Test and debug a function."
 - "Set default values for function parameters."
 - "Explain why we should divide programs into small, single-purpose functions."
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/Eb1T_XGiRFpLu4Bd9X3MRF8BPRZzzY9Ejq9PoLeKsbvx-w?e=b4Lk9f' target='_blank'> View Lecture Video</a>"
+
 keypoints:
 - "Define a function using `def function_name(parameter)`."
 - "The body of a function must be indented."

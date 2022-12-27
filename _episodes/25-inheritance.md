@@ -10,8 +10,9 @@ children?"
 objectives:
 - "Be able to use inheritance to construct parent-child relationships between
 classes"
-- "Be able to override methods on child classes, and refer back to the parent
-class's implementations"
+- "Be able to override methods on child classes, and refer back to the parent class's implementations"
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/ERw5Fw8Kg1JIkcBW-grYVpoBLeA_cNH5aUcqbcE1JIvwqQ?e=3wpZXb' target='_blank'> View Lecture Video</a>"
+
 keypoints:
 - "Adding a class in parentheses after a class definition indicates
 that the new class is a subclass of the bracketed class (parent class)."

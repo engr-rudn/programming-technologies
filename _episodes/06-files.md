@@ -7,6 +7,7 @@ questions:
 objectives:
 - "Use a library function to get a list of filenames that match a wildcard pattern."
 - "Write a `for` loop to process multiple files."
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/EQ0Nwbuz-QRKiplO6X6-PnYBn7J21J0L5Ld9zGJWuf8STQ?e=6QQAZ9' target='_blank'> View Lecture Video</a>"
 keypoints:
 - "Use `glob.glob(pattern)` to create a list of files whose names match a pattern."
 - "Use `*` in a pattern to match zero or more characters, and `?` to match any single character."

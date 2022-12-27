@@ -11,6 +11,8 @@ objectives:
 - "Be able to distinguish between class and object"
 - "Be able to construct objects via a class's constructor"
 - "Be able to distinguish between equality and identity of objects"
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/EXH_3J-0lSJKkSvKmpcyyn0B_9LOJDyJ0k9Ec7oybph7sg?e=9h6yRB' target='_blank'> View Video Related to the Lecture</a>"
+
 keypoints:
 - "Anything that we can store in a variable in Python is an object"
 - "Every object in Python has a class (or type)"

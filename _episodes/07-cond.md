@@ -7,6 +7,8 @@ questions:
 objectives:
 - "Write conditional statements including `if`, `elif`, and `else` branches."
 - "Correctly evaluate expressions containing `and` and `or`."
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/EevZAUfsrIpEmE6Tyk9YIE4BLqLtAZANgL5b3x6WJJLahA?e=77petU'  target='_blank'> View Lecture Video</a>"
+
 keypoints:
 - "Use `if condition` to start a conditional statement, `elif condition` to
    provide additional tests, and `else` to provide a default."

@@ -7,6 +7,8 @@ questions:
 objectives:
 - "Debug code containing an error systematically."
 - "Identify ways of making code less error-prone and more easily tested."
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/ESGbv3rX-PZOqHbAOWCb9hgB5xU2i1xNp9wnxuQvISOMoA?e=0FchHY' target='_blank'> View Lecture Video</a>"
+
 keypoints:
 - "Know what code is supposed to do *before* trying to debug it."
 - "Make it fail every time."

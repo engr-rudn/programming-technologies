@@ -10,6 +10,8 @@ objectives:
 - "Write classes from scratch"
 - "Write methods for classes"
 - "Write custom `__init__` methods"
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/EZMRiauV6_5Btx0S7pIgdj0B9HvaACRPHsB6kVgg09SPAg?e=HGGBiz' target='_blank'> View Lecture Video</a>"
+
 keypoints:
 - "Classes in Python are blocks started with the `class` keyword"
 - "Method definitions look like functions, but must take a `self` argument"

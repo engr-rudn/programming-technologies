@@ -8,7 +8,8 @@ questions:
 objectives:
 - "Plot simple graphs from data."
 - "Plot multiple graphs in a single figure."
-- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/Ea0uflZgTcFFhIf7ECNtrtwB4a_npc5RY5SXLL6RoF9tRw?e=JBBkVZ' target='_blank'> View Lecture Video</a>"
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/Ea0uflZgTcFFhIf7ECNtrtwB4a_npc5RY5SXLL6RoF9tRw?e=JBBkVZ' target='_blank'> View Lecture Video1</a>"
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/EQqCtU50TMtOmb1I-3fFAjgBrp2XG-rdetcj-QkOmWoiHw?e=K4j9lK' target='_blank'> View Lecture Video2</a>"
 keypoints:
 - "Use the `pyplot` module from the `matplotlib` library for creating simple visualizations."
 ---

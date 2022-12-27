@@ -9,6 +9,7 @@ objectives:
 - "Correctly write `for` loops to repeat simple calculations."
 - "Trace changes to a loop variable as the loop runs."
 - "Trace changes to other variables as they are updated by a `for` loop."
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/Ebr0XMp_5rdFqScjf5E7rsoBET43rnmCG4fOADknVIniLw?e=Nv5fv5' target='_blank'> View Lecture Video1</a>"
 keypoints:
 - "Use `for variable in sequence` to process the elements of a sequence one at a time."
 - "The body of a `for` loop must be indented."
