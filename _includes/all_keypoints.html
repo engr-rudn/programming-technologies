@@ -25,7 +25,11 @@
         {% endfor %}
         </ul>
       </td>
+    <td class="col-md-3">
+        <a href="{{ relative_root_path }}{{ episode.url }}">{{  episode.title }}</a>
+      </td>
     </tr>
+ 
   {% endunless %}
 {% endfor %}
 </table>
