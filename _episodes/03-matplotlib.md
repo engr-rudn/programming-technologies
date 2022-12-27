@@ -5,12 +5,12 @@ exercises: 20
 questions:
 - "How can I visualize tabular data in Python?"
 - "How can I group several plots together?"
-- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/Ea0uflZgTcFFhIf7ECNtrtwB4a_npc5RY5SXLL6RoF9tRw?e=JBBkVZ'> Video Lecture</a>"
 objectives:
 - "Plot simple graphs from data."
 - "Plot multiple graphs in a single figure."
 keypoints:
 - "Use the `pyplot` module from the `matplotlib` library for creating simple visualizations."
+- "<a href='https://pfur-my.sharepoint.com/:v:/g/personal/teklay_ty_pfur_ru/Ea0uflZgTcFFhIf7ECNtrtwB4a_npc5RY5SXLL6RoF9tRw?e=JBBkVZ'> View Lecture Video</a>"
 ---
 
 ## Visualizing data
