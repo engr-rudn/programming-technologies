@@ -31,8 +31,8 @@ Desktop.
 
 ## Assignments materials
 
-Download [assignments/nims.py][nims]
-        and [assignments/strings_and_lists.py][strings_and_lists].
+Download [nims.py](https://engr-rudn.github.io/python-novice-inflammation/data/assignments/nims.py)
+        and [strings_and_lists.py](https://engr-rudn.github.io/python-novice-inflammation/data/assignments/strings_and_lists).
 
 ## Launch Python interface
 
