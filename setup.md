@@ -31,8 +31,8 @@ Desktop.
 
 ## Assignments materials
 
-Download [Informatics_Assignment-1](https://engr-rudn.github.io/python-novice-inflammation/data/assignments/Informatics_Assignment-1.pdf), which is pdf file and the python files  [nims.py](https://engr-rudn.github.io/python-novice-inflammation/data/assignments/nims.py)
-        and [strings_and_lists.py](https://engr-rudn.github.io/python-novice-inflammation/data/assignments/strings_and_lists).
+Download <a href="https://engr-rudn.github.io/python-novice-inflammation/data/assignments/Informatics_Assignment-1.pdf" target="_blank"> Informatics_Assignment-1</a>) [](), which is pdf file and the python files  [nims.py](https://engr-rudn.github.io/python-novice-inflammation/data/assignments/nims.py)
+        and [strings_and_lists.py](https://engr-rudn.github.io/python-novice-inflammation/data/assignments/strings_and_lists.py).
 
 ## Launch Python interface
 
