@@ -29,6 +29,11 @@ and in [Anaconda documentation][anaconda-install].
 You should see two folders called `data` and `code` in the `swc-python` directory on your
 Desktop.
 
+## Assignments materials
+
+Download [assignments/nims.py][nims]
+        and [assignments/strings_and_lists.py][strings_and_lists].
+
 ## Launch Python interface
 
 To start working with Python, we need to launch a program that will interpret and execute our
