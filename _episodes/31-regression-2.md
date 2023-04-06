@@ -16,14 +16,14 @@ keypoints:
 ---
 
 
-<!-- 
+
 <!-- ```{r setup, include=FALSE}
 # load packages here
 library(tidyverse)
 library(ggfortify)
 library(car)
 ``` -->
- -->
+ 
 ### Background and Introduction
 
 Our data comes from the 2017-2018 National Health and Nutrition Examination 
@@ -73,7 +73,7 @@ Blood      | Systolic blood pressure (mmHg)
 We start by applying basic summary and exploratory statistics to this data to 
 better understand the data and identify trends.
 
-```{r, fig.align='center'}
+```
 nhanes <- read.csv("nhanes_sample.csv", header = TRUE) %>% 
   select(Blood, Alcohol) 
 summary(nhanes)
@@ -93,17 +93,17 @@ nhanes_base_plot
 
 Here is the general linear model we want to fit:
 
-$\widehat{Blood}_i = \beta_0 + \beta_1\times\text{Alcohol)}_i$
+$$\widehat{Blood}_i = \beta_0 + \beta_1\times\text{Alcohol)}_i$$
 
 We now fit an initial model.
 
-```{r, fig.align='center'}
+```
 # <...code to fit linear model and print out a summary to make sure the output
 #     doesn't look strange...>
 nhanes_lm <- lm(Blood ~ Alcohol, data = nhanes)
 summary(nhanes_lm)
-nhanes$residuals <- nhanes_lm$residuals
-nhanes$fittedBlood <- nhanes_lm$fitted.values
+nhanes$$residuals <- nhanes_lm$$residuals
+nhanes$$fittedBlood <- nhanes_lm$$fitted.values
 ```
 
 Before we can interpret our model, we need to check the assumptions of the 
@@ -111,7 +111,7 @@ simple linear model to make sure the model fits the data well.
 
 #### X vs Y is linear
 
-```{r, fig.align='center'}
+```
 # <...code to check assumptions [you should use ALL diagnostics]...>
 nhanes_base_plot
 nhanes_resid_vs_fit <- autoplot(nhanes_lm, which = 1, ncol = 1, nrow = 1) +
@@ -131,7 +131,7 @@ and there is no reason to believe residuals are correlated about time or space.
 
 #### The residuals are normally distributed and centered at zero
 
-```{r, fig.align='center'}
+```
 # <...code to check assumptions [you should use ALL diagnostics]...>
 # boxplot
 nhanes_boxplot <- ggplot(data = nhanes, mapping = aes(y = residuals)) +
@@ -145,15 +145,15 @@ nhanes_hist <- ggplot(data = nhanes, mapping = aes(x = residuals)) +
   stat_function(fun = dnorm, 
                 color = "red", 
                 size = 2,
-                args = list(mean = mean(nhanes$residuals), 
-                            sd = sd(nhanes$residuals))) 
+                args = list(mean = mean(nhanes$$residuals), 
+                            sd = sd(nhanes$$residuals))) 
 nhanes_hist
 # qq plot
 nhanes_qq <- autoplot(nhanes_lm, which = 2, ncol = 1, nrow = 1) +
   theme(aspect.ratio = 1)
 nhanes_qq
 #Shapiro wilk test
-shapiro.test(nhanes_lm$residuals)
+shapiro.test(nhanes_lm$$residuals)
 ```
 
 Residuals normally distributed and centered at zero assumption is likely 
@@ -162,14 +162,14 @@ right-skewed. The brown-forsythe test also returned a very significant p-value.
 
 #### The residuals have equal/constant variance across all values of X
 
-```{r, fig.align='center'}
+```
 # <...code to check assumptions [you should use ALL diagnostics]...>
 # Residuals vs Fitted
 nhanes_resid_vs_fit
 # Brown Forsythe Test
 grp <- as.factor(c(rep("lower", floor(dim(nhanes)[1] / 2)), 
                    rep("upper", ceiling(dim(nhanes)[1] / 2))))
-leveneTest(nhanes[order(nhanes$Alcohol), "residuals"] ~ grp, center = median)
+leveneTest(nhanes[order(nhanes$$Alcohol), "residuals"] ~ grp, center = median)
 ```
 
 Constant Variance assumption is likely met. The levene test shows a p-value much 
@@ -179,7 +179,7 @@ be equally spread.
 
 #### The model describes all observations 
 
-```{r, fig.align='center'}
+```
 # Scatterplot
 nhanes_base_plot
 # Boxplot
@@ -189,7 +189,7 @@ nhanes_qq
 # Histogram
 nhanes_hist
 #get cooks distance value from all observations
-nhanes$cooksd <- cooks.distance(nhanes_lm)
+nhanes$$cooksd <- cooks.distance(nhanes_lm)
 #plot cooks distance against the observation number
 ggplot(data = nhanes) +
   geom_point(mapping = aes(x = as.numeric(rownames(nhanes)),
@@ -201,7 +201,7 @@ ggplot(data = nhanes) +
              color = "red", linetype = "dashed") +
   theme(aspect.ratio = 1)
 #DFFITS
-nhanes$dffits <- dffits(nhanes_lm)
+nhanes$$dffits <- dffits(nhanes_lm)
  
 nhanes_dffits <- ggplot( data = nhanes) +
   geom_point(mapping = aes(x = as.numeric(rownames(nhanes)),
@@ -209,7 +209,7 @@ nhanes_dffits <- ggplot( data = nhanes) +
   theme_bw() +
   ylab("Absolute Value of DFFITS for Acohol") +
   xlab("Observation Number") +
-  geom_hline(mapping = aes(yintercept = 2 * sqrt(length(nhanes_lm$coefficients) /
+  geom_hline(mapping = aes(yintercept = 2 * sqrt(length(nhanes_lm$$coefficients) /
                                   	             length(dffits))),
          	color = "red", linetype = "dashed") +
   theme(aspect.ratio = 1)
@@ -217,11 +217,11 @@ nhanes_dffits
  
 nhanes %>%
   mutate(rowNum = row.names(nhanes)) %>%
-  filter(abs(dffits) > 2 * sqrt(length(nhanes_lm$coefficients) /
+  filter(abs(dffits) > 2 * sqrt(length(nhanes_lm$$coefficients) /
                               	length(dffits))) %>%
   arrange(desc(abs(dffits)))
 #DFBETAS
-nhanes$dfbetas_alcohol <- as.vector(dfbetas(nhanes_lm)[, 2])
+nhanes$$dfbetas_alcohol <- as.vector(dfbetas(nhanes_lm)[, 2])
 nhanes_dfbetas_plot <- ggplot(data = nhanes) +
   geom_point(mapping = aes(x = as.numeric(rownames(nhanes)),
                            y = abs(dfbetas_alcohol))) +
@@ -260,15 +260,15 @@ transformation to find a good transformation for the response. If the model
 still doesn't describe all observations, we'll try the model with and without 
 them.
 
-```{r, fig.align='center'}
+```
 # <...code for Box-Cox here...>
-bc <- boxCox(nhanes$Blood ~ nhanes$Alcohol)
-bc$x[which.max(bc$y)]
-nhanes$Blood_trans <- 1 / (nhanes$Blood)
+bc <- boxCox(nhanes$$Blood ~ nhanes$$Alcohol)
+bc$$x[which.max(bc$$y)]
+nhanes$$Blood_trans <- 1 / (nhanes$$Blood)
 nhanes_lm_trans <- lm(Blood_trans ~ Alcohol, data = nhanes)
 summary(nhanes_lm_trans)
-nhanes$residuals_trans <- nhanes_lm_trans$residuals
-nhanes$fittedBlood_trans <- nhanes_lm_trans$fitted.values
+nhanes$$residuals_trans <- nhanes_lm_trans$$residuals
+nhanes$$fittedBlood_trans <- nhanes_lm_trans$$fitted.values
 nhanes_base_plot_trans <- 
   ggplot(data = nhanes, mapping = aes(x = Alcohol, y = Blood_trans)) +
   geom_point() +
@@ -286,7 +286,7 @@ transformed data and assess the assumptions again that are relevant.
 
 #### X vs Y is linear
 
-```{r, fig.align='center'}
+```
 # <...code to check assumptions [you should use ALL diagnostics]...>
 # Scatterplot
 nhanes_base_plot_trans
@@ -304,7 +304,7 @@ appears roughly horizontal.
 
 #### The residuals are normally distributed and centered at zero
 
-```{r, fig.align='center'}
+```
 # <...code to check assumptions [you should use ALL diagnostics]...>
 # Boxplot
 nhanes_boxplot_trans <- 
@@ -322,8 +322,8 @@ nhanes_hist_trans <- ggplot(data = nhanes, mapping = aes(x = residuals_trans)) +
   stat_function(fun = dnorm, 
                 color = "red", 
                 size = 2,
-                args = list(mean = mean(nhanes$residuals_trans), 
-                            sd = sd(nhanes$residuals_trans))) 
+                args = list(mean = mean(nhanes$$residuals_trans), 
+                            sd = sd(nhanes$$residuals_trans))) 
 nhanes_hist_trans
 # QQ Plot
 nhanes_qq_trans <- autoplot(nhanes_lm_trans, which = 2, ncol = 1, nrow = 1) +
@@ -331,7 +331,7 @@ nhanes_qq_trans <- autoplot(nhanes_lm_trans, which = 2, ncol = 1, nrow = 1) +
    theme(aspect.ratio = 1)
 nhanes_qq_trans
 # Shapiro wilk test
-shapiro.test(nhanes$residuals_trans)
+shapiro.test(nhanes$$residuals_trans)
 ```
 
 Residuals are normally distributed and centered at zero assumption is met. The 
@@ -341,14 +341,14 @@ insignificant p-value.
 
 #### The residuals have equal/constant variance across all values of X
 
-```{r, fig.align='center'}
+```
 # <...code to check assumptions [you should use ALL diagnostics]...>
 # Residuals vs fitted
 nhanes_resid_vs_fit_trans
 # Brown-Forsythe
 grp <- as.factor(c(rep("lower", floor(dim(nhanes)[1] / 2)), 
                    rep("upper", ceiling(dim(nhanes)[1] / 2))))
-leveneTest(nhanes[order(nhanes$Alcohol), "residuals_trans"] ~ grp, center = median)
+leveneTest(nhanes[order(nhanes$$Alcohol), "residuals_trans"] ~ grp, center = median)
 ```
 
 Constant Variance assumption is likely met. The Brown-Forsythe test shows a 
@@ -358,7 +358,7 @@ difference is likely negligible.
 
 #### The model describes all observations 
 
-```{r, fig.align='center'}
+```
 # Scatterplot
 nhanes_base_plot_trans
 # Boxplot
@@ -368,7 +368,7 @@ nhanes_qq_trans
 # Histogram
 nhanes_hist_trans
 # get cooks distance value from all observations
-nhanes$cooksd_trans <- cooks.distance(nhanes_lm_trans)
+nhanes$$cooksd_trans <- cooks.distance(nhanes_lm_trans)
 # plot cooks distance against the observation number
 ggplot(data = nhanes) +
   geom_point(mapping = aes(x = as.numeric(rownames(nhanes)),
@@ -380,7 +380,7 @@ ggplot(data = nhanes) +
              color = "red", linetype = "dashed") +
   theme(aspect.ratio = 1)
 # DFFITS
-nhanes$dffits_trans <- dffits(nhanes_lm_trans)
+nhanes$$dffits_trans <- dffits(nhanes_lm_trans)
  
 nhanes_dffits_trans <- ggplot( data = nhanes) +
   geom_point(mapping = aes(x = as.numeric(rownames(nhanes)),
@@ -389,7 +389,7 @@ nhanes_dffits_trans <- ggplot( data = nhanes) +
   ylab("Absolute Value of DFFITS for Alcohol") +
   xlab("Observation Number") +
   geom_hline(mapping = aes(yintercept = 2 * 
-                             sqrt(length(nhanes_lm_trans$coefficients) /
+                             sqrt(length(nhanes_lm_trans$$coefficients) /
                                   	             length(dffits_trans))),
          	color = "red", linetype = "dashed") +
   theme(aspect.ratio = 1)
@@ -397,11 +397,11 @@ nhanes_dffits_trans
  
 nhanes %>%
   mutate(rowNum = row.names(nhanes)) %>%
-  filter(abs(dffits_trans) > 2 * sqrt(length(nhanes_lm_trans$coefficients) /
+  filter(abs(dffits_trans) > 2 * sqrt(length(nhanes_lm_trans$$coefficients) /
                               	length(dffits_trans))) %>%
   arrange(desc(abs(dffits_trans)))
 # DFBETAS
-nhanes$dfbetas_alcohol_trans <- as.vector(dfbetas(nhanes_lm_trans)[, 2])
+nhanes$$dfbetas_alcohol_trans <- as.vector(dfbetas(nhanes_lm_trans)[, 2])
 nhanes_dfbetas_plot_trans <- ggplot(data = nhanes) +
   geom_point(mapping = aes(x = as.numeric(rownames(nhanes)),
                            y = abs(dfbetas_alcohol_trans))) +
@@ -436,14 +436,14 @@ impact of these points, we will create a new data set with these points removed.
 We then apply the transformations to Alcohol and Blood and fit another linear 
 model.
 
-```{r, fig.align='center'}
+```
 nhanes_copy <- read.csv("nhanes_sample copy.csv", header = TRUE)
 summary(nhanes_copy)
-nhanes_copy$Blood_trans <- 1 / (nhanes_copy$Blood)
+nhanes_copy$$Blood_trans <- 1 / (nhanes_copy$$Blood)
 nhanes_copy_lm_trans <- lm(Blood_trans ~ Alcohol, data = nhanes_copy)
 summary(nhanes_copy_lm_trans)
-nhanes_copy$residuals_trans <- nhanes_copy_lm_trans$residuals
-nhanes_copy$fittedBlood_trans <- nhanes_copy_lm_trans$fitted.values
+nhanes_copy$$residuals_trans <- nhanes_copy_lm_trans$$residuals
+nhanes_copy$$fittedBlood_trans <- nhanes_copy_lm_trans$$fitted.values
 nhanes_copy_base_plot_trans <- ggplot(data = nhanes_copy, 
                                       mapping = aes(x = Alcohol, y = Blood_trans)) +
   geom_point() +
@@ -466,7 +466,7 @@ $$\widehat{\frac{1}{Blood_i}} = 0.008195 - 0.000001568\times\text{Alcohol}_i$$
 To start, we will assess the model slopes, confidence intervals, and hypothesis 
 tests.
 
-```{r, fig.align='center'}
+```
 # <...code to print out a summary of the model and create confidence
 #     intervals...>
 summary(nhanes_lm_trans)
@@ -483,7 +483,7 @@ in the predicted average blood pressure for a subject that consumes 30 grams of
 alcohol. We will use this information to create confidence and prediction 
 intervals for average blood pressure.  
 
-```{r, fig.align='center'}
+```
 # <...code for confidence and prediction intervals...>
 predict(nhanes_lm_trans, newdata = data.frame(Alcohol = 30), 
         interval = "confidence", level = 0.95)
@@ -500,16 +500,16 @@ between 0.006009727 and 0.010286 mmHg when one's alcohol consumption is 30 grams
 We also plotted the confidence and prediction intervals across all values of 
 alcohol. 
 
-```{r, fig.align='center'}
+```
 # <...code for plot with confidence and prediction intervals...>
-Alcohol_values <- seq(min(nhanes$Alcohol), max(nhanes$Alcohol), length = 1000)
+Alcohol_values <- seq(min(nhanes$$Alcohol), max(nhanes$$Alcohol), length = 1000)
 conf_int_mean <- predict(nhanes_lm_trans, 
                          newdata = data.frame(Alcohol = Alcohol_values), 
                  interval = "confidence", level = 0.95)
 preds <- data.frame("Alcohol_values" = Alcohol_values, conf_int_mean)
 # linear model with Blood log transformed
 # Sequence of Alcohol values that we are interested in using to predict Blood  
-Alcohol_values <- seq(min(nhanes$Alcohol), max(nhanes$Alcohol), length = 1000)
+Alcohol_values <- seq(min(nhanes$$Alcohol), max(nhanes$$Alcohol), length = 1000)
 # 95% confidence intervals of **log(Blood)** across those values of Alcohol
 conf_int_mean_trans <- predict(nhanes_lm_trans, 
                                newdata = data.frame(Alcohol = Alcohol_values), 
@@ -548,9 +548,9 @@ nhanes_base_plot +
 ```
 
 Next, we are interested in how well the model fits the data. To do this, we look 
-at metrics such as $R^2$, the RMSE, MSE, and MAE. 
+at metrics such as $$R^2$$, the RMSE, MSE, and MAE. 
 
-```{r, fig.align='center'}
+```
 # MSE
 anova <- aov(nhanes_lm_trans)  # get ANOVA components
 nhanes_anova <- summary(anova)[[1]]  # save data in a usable form
@@ -561,9 +561,9 @@ mse
 rsme <- sqrt(mse)
 rsme
 # R-Squared
-summary(nhanes_lm_trans)$r.squared
+summary(nhanes_lm_trans)$$r.squared
 # MAE
-mae <- sum(abs(nhanes$Blood - nhanes$fittedBlood)) / nhanes_lm$df.residual
+mae <- sum(abs(nhanes$$Blood - nhanes$$fittedBlood)) / nhanes_lm$$df.residual
 mae
 ```
 
