@@ -69,4 +69,15 @@ about programming.
 To get started, follow the directions on the "[Setup][lesson-setup]" page to download data
 and install a Python interpreter.
 
+<table><tr> <td colspan="12" style="border-bottom: 2px solid #8A2BE2;"></td></tr></table>
+
+## Some important external links:
+<a href="https://www.louisbouchard.ai/learnai/" target="_blank">Learn AI</a>
+
+
+<b><i>Youtube Links</i></b>
+
+- <a href="https://www.youtube.com/watch?v=riXcZT2ICjA" target="_blank">Introduction to limits</a>
+
+
 {% include links.md %}
