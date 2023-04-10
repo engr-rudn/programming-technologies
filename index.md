@@ -69,7 +69,5 @@ about programming.
 To get started, follow the directions on the "[Setup][lesson-setup]" page to download data
 and install a Python interpreter.
 
-<table><tr> <td colspan="12" style="border-bottom: 2px solid #8A2BE2;"></td></tr></table>
-
 
 {% include links.md %}
