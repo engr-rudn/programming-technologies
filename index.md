@@ -72,12 +72,15 @@ and install a Python interpreter.
 <table><tr> <td colspan="12" style="border-bottom: 2px solid #8A2BE2;"></td></tr></table>
 
 ## Some important external links:
-<a href="https://www.louisbouchard.ai/learnai/" target="_blank">Learn AI</a>
+
+<b><i>Resources for Machine Learning/Deeplearning</i></b>
+
+- <a href="https://www.louisbouchard.ai/learnai/" target="_blank">Learn AI</a>
 
 
 <b><i>Youtube Links</i></b>
 
-- <a href="https://www.youtube.com/watch?v=riXcZT2ICjA" target="_blank">Introduction to limits</a>
+<!-- - <a href="https://www.youtube.com/watch?v=riXcZT2ICjA" target="_blank">Introduction to limits</a> -->
 
 
 {% include links.md %}
