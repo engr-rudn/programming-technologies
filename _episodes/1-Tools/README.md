@@ -10,6 +10,7 @@ objectives:
 
 ![Summary of regressions in a sketchnote](../../sketchnotes/ml-regression.png)
 
+![Summary of regressions in a sketchnote](../sketchnotes/ml-regression.png) 
 Sketchnote by [Tomomi Imura](https://www.twitter.com/girlie_mac)
 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/9/)
