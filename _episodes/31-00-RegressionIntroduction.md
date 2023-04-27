@@ -158,4 +158,4 @@ Take a [Learning Path](https://docs.microsoft.com/learn/modules/introduction-to-
 ---
 # Assignment
 
-[Get up and running](assignment.md)
+[Get up and running](31-00-RegressionIntroduction-assignment.md)
