@@ -7,6 +7,7 @@ questions:
 objectives:
 - "Understand PCA using examples"
 ---
+
 # Principle Component Analysis (PCA)
 Principal component analysis (PCA) allows us to summarize and to visualize the information in a data set containing individuals/observations described by multiple inter-correlated quantitative variables. Each variable could be considered as a different dimension. If you have more than 3 variables in your data sets, it could be very difficult to visualize a multi-dimensional hyperspace.
 
