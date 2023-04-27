@@ -9,13 +9,8 @@ objectives:
 # Get started with Python and Scikit-learn for regression models
 
 ![Summary of regressions in a sketchnote](../../sketchnotes/ml-regression.png)
-
-![Summary of regressions in a sketchnote](../sketchnotes/ml-regression.png) 
 Sketchnote by [Tomomi Imura](https://www.twitter.com/girlie_mac)
 
-## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/9/)
-
-### [This lesson is available in R!](./solution/R/lesson_1-R.ipynb)
 
 ## Introduction
 
@@ -73,7 +68,7 @@ In this folder, you will find the file _notebook.ipynb_.
     hello notebook
     ```
 
-![VS Code with a notebook open](images/notebook.jpg)
+![VS Code with a notebook open](../images/notebook.jpg)
 
 You can interleaf your code with comments to self-document the notebook.
 
@@ -199,7 +194,7 @@ In a new code cell, load the diabetes dataset by calling `load_diabetes()`. The 
     plt.show()
     ```
 
-   ![a scatterplot showing datapoints around diabetes](./images/scatterplot.png)
+   ![a scatterplot showing datapoints around diabetes](../images/scatterplot.png)
 
    ✅ Think a bit about what's going on here. A straight line is running through many small dots of data, but what is it doing exactly? Can you see how you should be able to use this line to predict where a new, unseen data point should fit in relationship to the plot's y axis? Try to put into words the practical use of this model.
 
