@@ -14,5 +14,4 @@ In this non-graded assignment, you should brush up on Python and get your enviro
 
 Take this [Python Learning Path](https://docs.microsoft.com/learn/paths/python-language/?WT.mc_id=academic-77952-leestott){:target="_blank"}, and then get your systems setup by going through these introductory videos:
 
-<a href="https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6
-target="_blank">Get Your System Setup</a>
+[Get Your System Setup](https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6){:target="_blank"}
