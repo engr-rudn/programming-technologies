@@ -68,7 +68,7 @@ In this folder, you will find the file _notebook.ipynb_.
     hello notebook
     ```
 
-![VS Code with a notebook open](../images/notebook.jpg)
+![VS Code with a notebook open](./1-Tools/images/notebook.jpg)
 
 You can interleaf your code with comments to self-document the notebook.
 
@@ -194,7 +194,7 @@ In a new code cell, load the diabetes dataset by calling `load_diabetes()`. The 
     plt.show()
     ```
 
-   ![a scatterplot showing datapoints around diabetes](./images/scatterplot.png)
+   ![a scatterplot showing datapoints around diabetes](./1-Tools/images/scatterplot.png)
 
    ✅ Think a bit about what's going on here. A straight line is running through many small dots of data, but what is it doing exactly? Can you see how you should be able to use this line to predict where a new, unseen data point should fit in relationship to the plot's y axis? Try to put into words the practical use of this model.
 
