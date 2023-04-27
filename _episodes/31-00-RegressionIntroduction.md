@@ -16,17 +16,17 @@ keypoints:
 Watch the video, then take the pre-lesson quiz
 -->
 
-[![ML, AI, deep learning - What's the difference?](https://img.youtube.com/vi/lTd9RSxS9ZE/0.jpg)](https://youtu.be/lTd9RSxS9ZE "ML, AI, deep learning - What's the difference?")
+[![ML, AI, deep learning - What's the difference?](https://img.youtube.com/vi/lTd9RSxS9ZE/0.jpg)](https://youtu.be/lTd9RSxS9ZE "ML, AI, deep learning - What's the difference?"){:target="_blank"}
 
 > 🎥 Click the image above for a video discussing the difference between machine learning, AI, and deep learning.
 
-## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/1/)
+## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/1/){:target="_blank"}
 
 ---
 
-Welcome to this course on classical machine learning for beginners! Whether you're completely new to this topic, or an experienced ML practitioner looking to brush up on an area, we're happy to have you join us! We want to create a friendly launching spot for your ML study and would be happy to evaluate, respond to, and incorporate your [feedback](https://github.com/microsoft/ML-For-Beginners/discussions).
+Welcome to this course on classical machine learning for beginners! Whether you're completely new to this topic, or an experienced ML practitioner looking to brush up on an area, we're happy to have you join us! We want to create a friendly launching spot for your ML study and would be happy to evaluate, respond to, and incorporate your [feedback](https://github.com/microsoft/ML-For-Beginners/discussions){:target="_blank"}.
 
-[![Introduction to ML](https://img.youtube.com/vi/h0e2HAPTGF4/0.jpg)](https://youtu.be/h0e2HAPTGF4 "Introduction to ML")
+[![Introduction to ML](https://img.youtube.com/vi/h0e2HAPTGF4/0.jpg)](https://youtu.be/h0e2HAPTGF4 "Introduction to ML"){:target="_blank"}
 
 > 🎥 Click the image above for a video: MIT's John Guttag introduces machine learning
 
@@ -35,11 +35,11 @@ Welcome to this course on classical machine learning for beginners! Whether you'
 
 Before starting with this curriculum, you need to have your computer set up and ready to run notebooks locally.
 
-- **Configure your machine with these videos**. Use the following links to learn [how to install Python](https://youtu.be/CXZYvNRIAKM) in your system and [setup a text editor](https://youtu.be/EU8eayHWoZg) for development.
-- **Learn Python**. It's also recommended to have a basic understanding of [Python](https://docs.microsoft.com/learn/paths/python-language/?WT.mc_id=academic-77952-leestott), a programming language useful for data scientists that we use in this course.
-- **Learn Node.js and JavaScript**. We also use JavaScript a few times in this course when building web apps, so you will need to have [node](https://nodejs.org) and [npm](https://www.npmjs.com/) installed, as well as [Visual Studio Code](https://code.visualstudio.com/) available for both Python and JavaScript development.
-- **Create a GitHub account**. Since you found us here on [GitHub](https://github.com), you might already have an account, but if not, create one and then fork this curriculum to use on your own. (Feel free to give us a star, too 😊)
-- **Explore Scikit-learn**. Familiarize yourself with [Scikit-learn](https://scikit-learn.org/stable/user_guide.html), a set of ML libraries that we reference in these lessons.
+- **Configure your machine with these videos**. Use the following links to learn [how to install Python](https://youtu.be/CXZYvNRIAKM) in your system and [setup a text editor](https://youtu.be/EU8eayHWoZg){:target="_blank"} for development.
+- **Learn Python**. It's also recommended to have a basic understanding of [Python](https://docs.microsoft.com/learn/paths/python-language/?WT.mc_id=academic-77952-leestott){:target="_blank"}, a programming language useful for data scientists that we use in this course.
+- **Learn Node.js and JavaScript**. We also use JavaScript a few times in this course when building web apps, so you will need to have [node](https://nodejs.org) and [npm](https://www.npmjs.com/){:target="_blank"} installed, as well as [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} available for both Python and JavaScript development.
+- **Create a GitHub account**. Since you found us here on [GitHub](https://github.com){:target="_blank"}, you might already have an account, but if not, create one and then fork this curriculum to use on your own. (Feel free to give us a star, too 😊)
+- **Explore Scikit-learn**. Familiarize yourself with [Scikit-learn](https://scikit-learn.org/stable/user_guide.html){:target="_blank"}, a set of ML libraries that we reference in these lessons.
 
 ---
 ## What is machine learning?
@@ -61,12 +61,12 @@ We live in a universe full of fascinating mysteries. Great scientists such as St
 ---
 ## The child's brain
 
-A child's brain and senses perceive the facts of their surroundings and gradually learn the hidden patterns of life which help the child to craft logical rules to identify learned patterns. The learning process of the human brain makes humans the most sophisticated living creature of this world. Learning continuously by discovering hidden patterns and then innovating on those patterns enables us to make ourselves better and better throughout our lifetime. This learning capacity and evolving capability is related to a concept called [brain plasticity](https://www.simplypsychology.org/brain-plasticity.html). Superficially, we can draw some motivational similarities between the learning process of the human brain and the concepts of machine learning.
+A child's brain and senses perceive the facts of their surroundings and gradually learn the hidden patterns of life which help the child to craft logical rules to identify learned patterns. The learning process of the human brain makes humans the most sophisticated living creature of this world. Learning continuously by discovering hidden patterns and then innovating on those patterns enables us to make ourselves better and better throughout our lifetime. This learning capacity and evolving capability is related to a concept called [brain plasticity](https://www.simplypsychology.org/brain-plasticity.html){:target="_blank"}. Superficially, we can draw some motivational similarities between the learning process of the human brain and the concepts of machine learning.
 
 ---
 ## The human brain
 
-The [human brain](https://www.livescience.com/29365-human-brain.html) perceives things from the real world, processes the perceived information, makes rational decisions, and performs certain actions based on circumstances. This is what we called behaving intelligently. When we program a facsimile of the intelligent behavioral process to a machine, it is called artificial intelligence (AI).
+The [human brain](https://www.livescience.com/29365-human-brain.html){:target="_blank"} perceives things from the real world, processes the perceived information, makes rational decisions, and performs certain actions based on circumstances. This is what we called behaving intelligently. When we program a facsimile of the intelligent behavioral process to a machine, it is called artificial intelligence (AI).
 
 ---
 ## Some terminology
@@ -78,7 +78,7 @@ Although the terms can be confused, machine learning (ML) is an important subset
 
 ![AI, ML, deep learning, data science](images/ai-ml-ds.png)
 
-> A diagram showing the relationships between AI, ML, deep learning, and data science. Infographic by [Jen Looper](https://twitter.com/jenlooper) inspired by [this graphic](https://softwareengineering.stackexchange.com/questions/366996/distinction-between-ai-ml-neural-networks-deep-learning-and-data-mining)
+> A diagram showing the relationships between AI, ML, deep learning, and data science. Infographic by [Jen Looper](https://twitter.com/jenlooper) inspired by [this graphic](https://softwareengineering.stackexchange.com/questions/366996/distinction-between-ai-ml-neural-networks-deep-learning-and-data-mining){:target="_blank"}
 
 ---
 ## Concepts to cover
@@ -144,9 +144,9 @@ In the near future, understanding the basics of machine learning is going to be 
 ---
 # 🚀 Challenge
 
-Sketch, on paper or using an online app like [Excalidraw](https://excalidraw.com/), your understanding of the differences between AI, ML, deep learning, and data science. Add some ideas of problems that each of these techniques are good at solving.
+Sketch, on paper or using an online app like [Excalidraw](https://excalidraw.com/){:target="_blank"}, your understanding of the differences between AI, ML, deep learning, and data science. Add some ideas of problems that each of these techniques are good at solving.
 
-# [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/2/)
+# [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/2/){:target="_blank"}
 
 ---
 # Review & Self Study
