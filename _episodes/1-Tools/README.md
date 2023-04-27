@@ -1,3 +1,11 @@
+---
+title: "Get started with Python and Scikit-learn for regression models"
+questions:
+- ""
+objectives:
+- ""
+---
+
 # Get started with Python and Scikit-learn for regression models
 
 ![Summary of regressions in a sketchnote](../../sketchnotes/ml-regression.png)
