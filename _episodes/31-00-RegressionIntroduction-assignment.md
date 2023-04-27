@@ -1,3 +1,11 @@
+---
+title: "Assignment for setting Jupyter Notebook"
+questions:
+- "How to setup python and jupyter notebook?"
+objectives:
+- "Setting python environment for running the programs"
+---
+
 # Get Up and Running
 
 ## Instructions
