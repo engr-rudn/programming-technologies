@@ -11,7 +11,7 @@ objectives:
 
 In North America, pumpkins are often carved into scary faces for Halloween. Let's discover more about these fascinating vegetables!
 
-![jack-o-lanterns](./images/jack-o-lanterns.jpg)
+![jack-o-lanterns](../2-Regression/images/jack-o-lanterns.jpg)
 > Photo by <a href="https://unsplash.com/@teutschmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Beth Teutschmann</a> on <a href="https://unsplash.com/s/photos/jack-o-lanterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 ## What you will learn
@@ -29,10 +29,10 @@ In this group of lessons, you will get set up to begin machine learning tasks, i
 
 ### Lessons
 
-1. [Tools of the trade](../1-Tools/README/index.html)
-2. [Managing data](../2-Data/README/index.html)
-3. [Linear and polynomial regression](../3-Linear/README/index.html)
-4. [Logistic regression](../4-Logistic/README/index.html)
+1. [Tools of the trade](../31-03-Regression_Tools/index.html){:target="_blank"}
+2. [Managing data](../31-03-RegressionData/index.html){:target="_blank"}
+3. [Linear and polynomial regression](../3-Linear/README/index.html){:target="_blank"}
+4. [Logistic regression](../4-Logistic/README/index.html){:target="_blank"}
 
 ---
 ### Credits

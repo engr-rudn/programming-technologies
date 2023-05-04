@@ -1,12 +1,23 @@
+---
+title: "Get started with Python and Scikit-learn for regression models"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # Get started with Python and Scikit-learn for regression models
 
-![Summary of regressions in a sketchnote](../../sketchnotes/ml-regression.png)
+![Summary of regressions in a sketchnote](../sketchnotes/ml-regression.png)
 
 > Sketchnote by [Tomomi Imura](https://www.twitter.com/girlie_mac)
 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/9/)
 
-> ### [This lesson is available in R!](./solution/R/lesson_1-R.ipynb)
+> ### [This lesson is available in R!](../2-Regression/1-Tools/solution/R/lesson_1-R.ipynb)
 
 ## Introduction
 
@@ -64,7 +75,7 @@ In this folder, you will find the file _notebook.ipynb_.
     hello notebook
     ```
 
-![VS Code with a notebook open](images/notebook.jpg)
+![VS Code with a notebook open](../31-03-RegressionTools/images/notebook.jpg)
 
 You can interleaf your code with comments to self-document the notebook.
 
@@ -190,16 +201,16 @@ In a new code cell, load the diabetes dataset by calling `load_diabetes()`. The 
     plt.show()
     ```
 
-   ![a scatterplot showing datapoints around diabetes](./images/scatterplot.png)
+   ![a scatterplot showing datapoints around diabetes](../2-Regression/1-Tools/images/scatterplot.png)
 
    ✅ Think a bit about what's going on here. A straight line is running through many small dots of data, but what is it doing exactly? Can you see how you should be able to use this line to predict where a new, unseen data point should fit in relationship to the plot's y axis? Try to put into words the practical use of this model.
 
 Congratulations, you built your first linear regression model, created a prediction with it, and displayed it in a plot!
 
----
-## 🚀Challenge
+> ## 🚀Challenge
+> Plot a different variable from this dataset. Hint: edit this line: `X = X[:, np.newaxis, 2]`. Given this dataset's target, what are you able to discover about the progression of diabetes as a disease?
+{: .challenge}
 
-Plot a different variable from this dataset. Hint: edit this line: `X = X[:, np.newaxis, 2]`. Given this dataset's target, what are you able to discover about the progression of diabetes as a disease?
 ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/10/)
 
 ## Review & Self Study
@@ -210,4 +221,4 @@ Read more about the concept of regression and think about what kinds of question
 
 ## Assignment
 
-[A different dataset](assignment.md)
+[A different dataset](../31-03-Regression_Tools-assignment/index.html){:target="_blank"} 

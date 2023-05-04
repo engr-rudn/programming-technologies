@@ -1,10 +1,21 @@
+---
+title: "Logistic regression to predict categories"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # Logistic regression to predict categories
 
-![Logistic vs. linear regression infographic](./images/linear-vs-logistic.png)
+![Logistic vs. linear regression infographic](../2-Regression/4-Logistic/images/linear-vs-logistic.png)
 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/15/)
 
-> ### [This lesson is available in R!](./solution/R/lesson_4-R.ipynb)
+> ### [This lesson is available in R!](../2-Regression/4-Logistic/solution/R/lesson_4-R.ipynb)
 
 ## Introduction
 
@@ -38,7 +49,7 @@ Logistic regression differs from linear regression, which you learned about prev
 
 Logistic regression does not offer the same features as linear regression. The former offers a prediction about a binary category ("orange or not orange") whereas the latter is capable of predicting continual values, for example given the origin of a pumpkin and the time of harvest, _how much its price will rise_.
 
-![Pumpkin classification Model](./images/pumpkin-classifier.png)
+![Pumpkin classification Model](../2-Regression/4-Logistic/images/pumpkin-classifier.png)
 > Infographic by [Dasani Madipalli](https://twitter.com/dasani_decoded)
 ### Other classifications
 
@@ -47,7 +58,7 @@ There are other types of logistic regression, including multinomial and ordinal:
 - **Multinomial**, which involves having more than one category - "Orange, White, and Striped".
 - **Ordinal**, which involves ordered categories, useful if we wanted to order our outcomes logically, like our pumpkins that are ordered by a finite number of sizes (mini,sm,med,lg,xl,xxl).
 
-![Multinomial vs ordinal regression](./images/multinomial-vs-ordinal.png)
+![Multinomial vs ordinal regression](../2-Regression/4-Logistic/images/multinomial-vs-ordinal.png)
 
 ### Variables DO NOT have to correlate
 
@@ -101,7 +112,7 @@ Seaborn offers some neat ways to visualize your data. For example, you can compa
     )
     ```
 
-    ![A grid of visualized data](images/pumpkins_catplot_1.png)
+    ![A grid of visualized data](../2-Regression/4-Logistic/images/pumpkins_catplot_1.png)
 
     By observing the data, you can see how the Color data relates to Variety.
 
@@ -180,7 +191,7 @@ The best way to perform this kind of analysis is plotting the data. We'll be usi
     g.set(xlabel="Item Size", ylabel="").set(xlim=(0,6))
     g.set_titles(row_template="{row_name}")
 ```
-![A catplot of visualized data](images/pumpkins_catplot_2.png)
+![A catplot of visualized data](../2-Regression/4-Logistic/images/pumpkins_catplot_2.png)
 
 ### Use a swarm plot
 
@@ -198,7 +209,7 @@ You can visualize variables side-by-side with Seaborn plots.
     sns.swarmplot(x="Color", y="ord__Item Size", data=encoded_pumpkins, palette=palette)
     ```
 
-    ![A swarm of visualized data](images/swarm_2.png)
+    ![A swarm of visualized data](../2-Regression/4-Logistic/images/swarm_2.png)
 
 **Watch Out**: the code above might generate a warning, since seaborn fails to represent such amount of datapoints into a swam plot. A possible solution is decreasing the size of the marker, by using the 'size' parameter. However, be aware that this affects the readability of the plot.
 
@@ -207,7 +218,7 @@ You can visualize variables side-by-side with Seaborn plots.
 >
 > Logistic regression relies on the concept of 'maximum likelihood' using [sigmoid functions](https://wikipedia.org/wiki/Sigmoid_function). A 'Sigmoid Function' on a plot looks like an 'S' shape. It takes a value and maps it to somewhere between 0 and 1. Its curve is also called a 'logistic curve'. Its formula looks like this:
 >
-> ![logistic function](images/sigmoid.png)
+> ![logistic function](../2-Regression/4-Logistic/images/sigmoid.png)
 >
 > where the sigmoid's midpoint finds itself at x's 0 point, L is the curve's maximum value, and k is the curve's steepness. If the outcome of the function is more than 0.5, the label in question will be given the class '1' of the binary choice. If not, it will be classified as '0'.
 
@@ -348,7 +359,7 @@ plt.show()
 ```
 Using Matplotlib, plot the model's [Receiving Operating Characteristic](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html?highlight=roc) or ROC. ROC curves are often used to get a view of the output of a classifier in terms of its true vs. false positives. "ROC curves typically feature true positive rate on the Y axis, and false positive rate on the X axis." Thus, the steepness of the curve and the space between the midpoint line and the curve matter: you want a curve that quickly heads up and over the line. In our case, there are false positives to start with, and then the line heads up and over properly:
 
-![ROC](./images/ROC_2.png)
+![ROC](../2-Regression/4-Logistic/images/ROC_2.png)
 
 Finally, use Scikit-learn's [`roc_auc_score` API](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html?highlight=roc_auc#sklearn.metrics.roc_auc_score) to compute the actual 'Area Under the Curve' (AUC):
 
@@ -360,10 +371,9 @@ The result is `0.9749908725812341`. Given that the AUC ranges from 0 to 1, you w
 
 In future lessons on classifications, you will learn how to iterate to improve your model's scores. But for now, congratulations! You've completed these regression lessons!
 
----
-## 🚀Challenge
-
-There's a lot more to unpack regarding logistic regression! But the best way to learn is to experiment. Find a dataset that lends itself to this type of analysis and build a model with it. What do you learn? tip: try [Kaggle](https://www.kaggle.com/search?q=logistic+regression+datasets) for interesting datasets.
+> ## 🚀Challenge
+> There's a lot more to unpack regarding logistic regression! But the best way to learn is to experiment. Find a dataset that lends itself to this type of analysis and build a model with it. What do you learn? tip: try [Kaggle](https://www.kaggle.com/search?q=logistic+regression+datasets) for interesting datasets.
+{: .challenge}
 
 ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/16/)
 
@@ -373,4 +383,4 @@ Read the first few pages of [this paper from Stanford](https://web.stanford.edu/
 
 ## Assignment 
 
-[Retrying this regression](assignment.md)
+[Retrying this regression](../2-RegressionLogistic-assignment/index.html){:target="_blank"}

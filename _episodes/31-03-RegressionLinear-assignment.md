@@ -1,3 +1,14 @@
+---
+title: "Create a Regression Model"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # Create a Regression Model
 
 ## Instructions

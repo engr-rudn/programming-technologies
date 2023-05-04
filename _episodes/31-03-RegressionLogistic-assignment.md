@@ -1,3 +1,14 @@
+---
+title: "Retrying some Regression"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # Retrying some Regression
 
 ## Instructions

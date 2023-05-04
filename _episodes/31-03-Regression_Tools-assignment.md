@@ -1,3 +1,14 @@
+---
+title: "Regression with Scikit-learn"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # Regression with Scikit-learn
 
 ## Instructions

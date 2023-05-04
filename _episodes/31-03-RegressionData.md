@@ -1,12 +1,23 @@
+---
+title: "Build a regression model using Scikit-learn: prepare and visualize data"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # Build a regression model using Scikit-learn: prepare and visualize data
 
-![Data visualization infographic](./images/data-visualization.png)
+![Data visualization infographic](../2-Regression/2-Data/images/data-visualization.png)
 
 Infographic by [Dasani Madipalli](https://twitter.com/dasani_decoded)
 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/11/)
 
-> ### [This lesson is available in R!](./solution/R/lesson_2-R.ipynb)
+> ### [This lesson is available in R!](../2-Regression/2-Data/solution/R/lesson_2-R.ipynb)
 
 ## Introduction
 
@@ -169,7 +180,7 @@ Try to create some basic plots to display the new dataframe you just created. Wh
     plt.show()
     ```
 
-    ![A scatterplot showing price to month relationship](./images/scatterplot.png)
+    ![A scatterplot showing price to month relationship](../2-Regression/2-Data/images/scatterplot.png)
 
     Is this a useful plot? Does anything about it surprise you?
 
@@ -186,15 +197,13 @@ To get charts to display useful data, you usually need to group the data somehow
     plt.ylabel("Pumpkin Price")
     ```
 
-    ![A bar chart showing price to month relationship](./images/barchart.png)
+    ![A bar chart showing price to month relationship](../2-Regression/2-Data/images/barchart.png)
 
     This is a more useful data visualization! It seems to indicate that the highest price for pumpkins occurs in September and October. Does that meet your expectation? Why or why not?
 
----
-
-## 🚀Challenge
-
-Explore the different types of visualization that Matplotlib offers. Which types are most appropriate for regression problems?
+> ## 🚀Challenge
+> Explore the different types of visualization that Matplotlib offers. Which types are most appropriate for regression problems?
+{: .challenge}
 
 ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/12/)
 
@@ -204,4 +213,4 @@ Take a look at the many ways to visualize data. Make a list of the various libra
 
 ## Assignment
 
-[Exploring visualization](assignment.md)
+[Exploring visualization](31-03-RegressionData-assignment/index.html){:target="_blank"}
