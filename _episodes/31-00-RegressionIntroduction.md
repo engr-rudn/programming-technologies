@@ -77,7 +77,7 @@ Although the terms can be confused, machine learning (ML) is an important subset
 ---
 ## AI, ML, Deep Learning
 
-![AI, ML, deep learning, data science](images/ai-ml-ds.png)
+![AI, ML, deep learning, data science](../1-Introduction/1-intro-to-ML/images/ai-ml-ds.png)
 
 > A diagram showing the relationships between AI, ML, deep learning, and data science. Infographic by [Jen Looper](https://twitter.com/jenlooper) inspired by [this graphic](https://softwareengineering.stackexchange.com/questions/366996/distinction-between-ai-ml-neural-networks-deep-learning-and-data-mining){:target="_blank"}
 
