@@ -1,3 +1,14 @@
+---
+title: "History of Machine Learning"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # History of machine learning
 
 ![Summary of History of machine learning in a sketchnote](../../sketchnotes/ml-history.png)
