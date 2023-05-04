@@ -1,6 +1,17 @@
+---
+title: "Fairness in Machine Learning"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # Fairness in Machine Learning 
  
-![Summary of Fairness in Machine Learning in a sketchnote](../../sketchnotes/ml-fairness.png)
+![Summary of Fairness in Machine Learning in a sketchnote](../sketchnotes/ml-fairness.png)
 > Sketchnote by [Tomomi Imura](https://www.twitter.com/girlie_mac)
 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/5/)
@@ -67,9 +78,9 @@ Another infamous example is a hand soap dispenser that could not seem to be able
 
 Stereotypical gender view was found in machine translation. When translating “he is a nurse and she is a doctor” into Turkish, problems were encountered. Turkish is a genderless language which has one pronoun, “o” to convey a singular third person, but translating the sentence back from Turkish to English yields the stereotypical and incorrect as “she is a nurse and he is a doctor”.
 
-![translation to Turkish](images/gender-bias-translate-en-tr.png)
+![translation to Turkish](../1-Introduction/3-fairness/images/gender-bias-translate-en-tr.png)
 
-![translation back to English](images/gender-bias-translate-tr-en.png)
+![translation back to English](../1-Introduction/3-fairness/images/gender-bias-translate-tr-en.png)
 
 ### Denigration
 
@@ -82,7 +93,7 @@ An image labeling technology infamously mislabeled images of dark-skinned people
  
 Skewed image search results can be a good example of this harm. When searching images of professions with an equal or higher percentage of men than women, such as engineering, or CEO, watch for results that are more heavily skewed towards a given gender.
 
-![Bing CEO search](images/ceos.png)
+![Bing CEO search](../1-Introduction/3-fairness/images/ceos.png)
 > This search on Bing for 'CEO' produces pretty inclusive results
 
 These five main types of harms are not mutually exclusive, and a single system can exhibit more than one type of harm. In addition, each case varies in its severity. For instance, unfairly labeling someone as a criminal is a much more severe harm than mislabeling an image. It's important, however, to remember that even relatively non-severe harms can make people feel alienated or singled out and the cumulative impact can be extremely oppressive. 
@@ -212,4 +223,4 @@ Read about Azure Machine Learning's tools to ensure fairness:
 
 ## Assignment
 
-[Explore Fairlearn](assignment.md) 
+[Explore Fairlearn](31-02-Fairness-assignment/index.html){:target="_blank"} 
