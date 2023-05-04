@@ -154,4 +154,4 @@ Here are items to watch and listen to:
 
 ## Assignment
 
-[Create a timeline](../1-Introduction/2-history-of-ML/assignment.md)
+[Create a timeline](31-01-HistoryOfMachineLearning-assignment.md)
