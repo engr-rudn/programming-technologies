@@ -58,14 +58,14 @@ Research was well funded by government agencies, advances were made in computati
 
 * [Shakey the robot](https://wikipedia.org/wiki/Shakey_the_robot), who could maneuver and decide how to perform tasks 'intelligently'.
 
-    ![Shakey, an intelligent robot](images/shakey.jpg)
+    ![Shakey, an intelligent robot](../1-Introduction/2-history-of-ML/images/shakey.jpg)
     > Shakey in 1972
 
 ---
 
 * Eliza, an early 'chatterbot', could converse with people and act as a primitive 'therapist'. You'll learn more about Eliza in the NLP lessons.
 
-    ![Eliza, a bot](images/eliza.png)
+    ![Eliza, a bot](../1-Introduction/2-history-of-ML/images/eliza.png)
     > A version of Eliza, a chatbot
 
 ---
@@ -143,4 +143,4 @@ Here are items to watch and listen to:
 
 ## Assignment
 
-[Create a timeline](assignment.md)
+[Create a timeline](../1-Introduction/2-history-of-ML/assignment.md)

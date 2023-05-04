@@ -1,5 +1,5 @@
 ---
-title: "Regression Models Comparison"
+title: "Introduction to machine learning"
 teaching: 0
 exercises: 0
 questions:
@@ -12,11 +12,12 @@ keypoints:
 
 # Introduction to machine learning
 
-<!--
 Watch the video, then take the pre-lesson quiz
--->
 
-[![ML, AI, deep learning - What's the difference?](https://img.youtube.com/vi/lTd9RSxS9ZE/0.jpg)](https://youtu.be/lTd9RSxS9ZE "ML, AI, deep learning - What's the difference?"){:target="_blank"}
+
+[![Introduction to Machine Learning](https://img.youtube.com/vi/lTd9RSxS9ZE/0.jpg)](https://youtu.be/6mSx_KJxcHI "ML, AI, deep learning - What's the difference?"){:target="_blank"}
+
+<!-- [![ML, AI, deep learning - What's the difference?](https://img.youtube.com/vi/lTd9RSxS9ZE/0.jpg)](https://youtu.be/lTd9RSxS9ZE "ML, AI, deep learning - What's the difference?"){:target="_blank"} -->
 
 > 🎥 Click the image above for a video discussing the difference between machine learning, AI, and deep learning.
 
