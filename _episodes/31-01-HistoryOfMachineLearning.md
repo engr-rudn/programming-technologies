@@ -136,8 +136,8 @@ It remains to be seen what the future holds, but it is important to understand t
 ---
 > 🎥 Click the image above for a video: Yann LeCun discusses the history of deep learning in this lecture
 ---
-> ## 🚀Challenge
 
+> ## 🚀Challenge
 > Dig into one of these historical moments and learn more about the people behind them. There are fascinating characters, and no scientific discovery was ever created in a cultural vacuum. What do you discover?
 {: .challenge}
 
