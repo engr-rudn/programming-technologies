@@ -132,12 +132,14 @@ Today machine learning and AI touch almost every part of our lives. This era cal
 It remains to be seen what the future holds, but it is important to understand these computer systems and the software and algorithms that they run. We hope that this curriculum will help you to gain a better understanding so that you can decide for yourself.
 
 [![The history of deep learning](https://img.youtube.com/vi/mTtDfKgLm54/0.jpg)](https://www.youtube.com/watch?v=mTtDfKgLm54 "The history of deep learning")
-> 🎥 Click the image above for a video: Yann LeCun discusses the history of deep learning in this lecture
 
 ---
-## 🚀Challenge
+> 🎥 Click the image above for a video: Yann LeCun discusses the history of deep learning in this lecture
+---
+> ## 🚀Challenge
 
-Dig into one of these historical moments and learn more about the people behind them. There are fascinating characters, and no scientific discovery was ever created in a cultural vacuum. What do you discover?
+> Dig into one of these historical moments and learn more about the people behind them. There are fascinating characters, and no scientific discovery was ever created in a cultural vacuum. What do you discover?
+{: .challenge}
 
 ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/4/)
 
