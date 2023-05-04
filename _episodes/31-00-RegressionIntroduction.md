@@ -49,7 +49,7 @@ The term 'machine learning' is one of the most popular and frequently used terms
 ---
 ## The hype curve
 
-![ml hype curve](images/hype.png)
+![ml hype curve](../1-Introduction/1-intro-to-ML/images/hype.png)
 
 > Google Trends shows the recent 'hype curve' of the term 'machine learning'
 
