@@ -1,3 +1,14 @@
+---
+title: "Create a timeline"
+teaching: 0
+exercises: 0
+questions:
+- ""
+objectives:
+- ""
+keypoints:
+- ""
+---
 # Create a timeline
 
 ## Instructions
