@@ -185,15 +185,13 @@ The tool helps you to assesses how a model's predictions affect different groups
 - Check out these [sample notebooks](https://github.com/Azure/MachineLearningNotebooks/tree/master/contrib/fairness) for more fairness assessment scenarios in Azure Machine Learning. 
 
 ---
-## 🚀 Challenge 
- 
-To prevent biases from being introduced in the first place, we should: 
-
+> ## 🚀 Challenge 
+> To prevent biases from being introduced in the first place, we should: 
 - have a diversity of backgrounds and perspectives among the people working on systems 
 - invest in datasets that reflect the diversity of our society 
 - develop better methods for detecting and correcting bias when it occurs 
-
 Think about real-life scenarios where unfairness is evident in model-building and usage. What else should we consider? 
+{: .challenge}
 
 ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/6/)
 ## Review & Self Study 
@@ -223,4 +221,4 @@ Read about Azure Machine Learning's tools to ensure fairness:
 
 ## Assignment
 
-[Explore Fairlearn](31-02-Fairness-assignment/index.html){:target="_blank"} 
+[Explore Fairlearn](../31-02-Fairness-assignment/index.html){:target="_blank"} 
