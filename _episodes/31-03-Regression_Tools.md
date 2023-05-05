@@ -75,7 +75,7 @@ In this folder, you will find the file _notebook.ipynb_.
     hello notebook
     ```
 
-![VS Code with a notebook open](../31-03-RegressionTools/images/notebook.jpg)
+![VS Code with a notebook open](../2-Regression/1-Tools/images/notebook.jpg)
 
 You can interleaf your code with comments to self-document the notebook.
 
