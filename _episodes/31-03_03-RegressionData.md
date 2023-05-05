@@ -213,4 +213,4 @@ Take a look at the many ways to visualize data. Make a list of the various libra
 
 ## Assignment
 
-[Exploring visualization](31-03-RegressionData-assignment/index.html){:target="_blank"}
+[Exploring visualization](31-03_04-RegressionData-assignment/index.html){:target="_blank"}

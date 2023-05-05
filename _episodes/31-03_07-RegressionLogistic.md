@@ -383,4 +383,4 @@ Read the first few pages of [this paper from Stanford](https://web.stanford.edu/
 
 ## Assignment 
 
-[Retrying this regression](../2-RegressionLogistic-assignment/index.html){:target="_blank"}
+[Retrying this regression](../31-03_08-RegressionLogistic-assignment/index.html){:target="_blank"}

@@ -221,4 +221,4 @@ Read more about the concept of regression and think about what kinds of question
 
 ## Assignment
 
-[A different dataset](../31-03-Regression_Tools-assignment/index.html){:target="_blank"} 
+[A different dataset](../31-03_02-Regression_Tools-assignment/index.html){:target="_blank"} 

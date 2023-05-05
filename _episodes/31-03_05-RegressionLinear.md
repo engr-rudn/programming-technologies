@@ -357,4 +357,4 @@ In this lesson we learned about Linear Regression. There are other important typ
 
 ## Assignment 
 
-[Build a Model](../31-03-RegressionLinear-assignment/index.html){:target="_blank"}
+[Build a Model](../31-03_06-RegressionLinear-assignment/index.html){:target="_blank"}

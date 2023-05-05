@@ -29,10 +29,10 @@ In this group of lessons, you will get set up to begin machine learning tasks, i
 
 ### Lessons
 
-1. [Tools of the trade](../31-03-Regression_Tools/index.html){:target="_blank"}
-2. [Managing data](../31-03-RegressionData/index.html){:target="_blank"}
-3. [Linear and polynomial regression](../31-03-RegressionLinear/index.html){:target="_blank"}
-4. [Logistic regression](../31-03-RegressionLogistic/index.html){:target="_blank"}
+1. [Tools of the trade](../31-03_01-Regression_Tools/index.html){:target="_blank"}
+2. [Managing data](../31-03_03-RegressionData/index.html){:target="_blank"}
+3. [Linear and polynomial regression](../31-03_05-RegressionLinear/index.html){:target="_blank"}
+4. [Logistic regression](../31-03_07-RegressionLogistic/index.html){:target="_blank"}
 
 ---
 ### Credits
