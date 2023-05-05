@@ -16,6 +16,7 @@ keypoints:
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/13/)
 
 > ### [This lesson is available in R!](../2-Regression/3-Linear/solution/R/lesson_3-R.ipynb)
+
 ### Introduction 
 
 So far you have explored what regression is with sample data gathered from the pumpkin pricing dataset that we will use throughout this lesson. You have also visualized it using Matplotlib.
@@ -26,18 +27,15 @@ In this lesson, you will learn more about two types of regression: _basic linear
 
 > Throughout this curriculum, we assume minimal knowledge of math, and seek to make it accessible for students coming from other fields, so watch for notes, 🧮 callouts, diagrams, and other learning tools to aid in comprehension.
 
-### Prerequisite
-
-You should be familiar by now with the structure of the pumpkin data that we are examining. You can find it preloaded and pre-cleaned in this lesson's _notebook.ipynb_ file. In the file, the pumpkin price is displayed per bushel in a new data frame.  Make sure you can run these notebooks in kernels in Visual Studio Code.
-
-### Preparation
-
-As a reminder, you are loading this data so as to ask questions of it. 
-
-- When is the best time to buy pumpkins? 
-- What price can I expect of a case of miniature pumpkins?
-- Should I buy them in half-bushel baskets or by the 1 1/9 bushel box?
+> ## Prerequisite
+> 
+> You should be familiar by now with the structure of the pumpkin data that we are examining. You can find it preloaded and pre-cleaned in this lesson's _notebook.ipynb_ file. In the file, the pumpkin price is displayed per bushel in a new data frame.  Make sure you can run these notebooks in kernels in Visual Studio Code.
+> As a reminder, you are loading this data so as to ask questions of it. 
+> - When is the best time to buy pumpkins? 
+> - What price can I expect of a case of miniature pumpkins?
+> - Should I buy them in half-bushel baskets or by the 1 1/9 bushel box?
 Let's keep digging into this data.
+{: .prereq}
 
 In the previous lesson, you created a Pandas data frame and populated it with part of the original dataset, standardizing the pricing by the bushel. By doing that, however, you were only able to gather about 400 datapoints and only for the fall months. 
 
@@ -347,10 +345,9 @@ This should give us the best determination coefficient of almost 97%, and MSE=2.
 
 🏆 Well done! You created four Regression models in one lesson, and improved the model quality to 97%. In the final section on Regression, you will learn about Logistic Regression to determine categories. 
 
----
-## 🚀Challenge
-
-Test several different variables in this notebook to see how correlation corresponds to model accuracy.
+> ## 🚀Challenge
+> Test several different variables in this notebook to see how correlation corresponds to model accuracy.
+{: .challenge}
 
 ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/14/)
 
