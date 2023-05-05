@@ -319,4 +319,4 @@ While this lesson just touched on the utility of creating a recommendation syste
 
 ## Assignment 
 
-[Build a new recommender](../32-00-06-Applied-assignment){:target="_blank"}
+[Build a new recommender](../32-00_06-Applied-assignment){:target="_blank"}

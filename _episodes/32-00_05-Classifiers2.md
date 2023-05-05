@@ -238,4 +238,4 @@ There's a lot of jargon in these lessons, so take a minute to review [this list]
 
 ## Assignment 
 
-[Parameter play](../32-00-05-Classifiers2-assignment/index.html){:target="_blank"}
+[Parameter play](../32-00_05-Classifiers2-assignment/index.html){:target="_blank"}
