@@ -1,4 +1,14 @@
-# K-Means clustering
+---
+title: "K-Means clustering"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
+
 
 [![Andrew Ng explains Clustering](https://img.youtube.com/vi/hDmNF9JG3lo/0.jpg)](https://youtu.be/hDmNF9JG3lo "Andrew Ng explains Clustering")
 
@@ -21,7 +31,7 @@ Terms you will learn about:
 
 The clusters can be visualized as [Voronoi diagrams](https://wikipedia.org/wiki/Voronoi_diagram), which include a point (or 'seed') and its corresponding region. 
 
-![voronoi diagram](images/voronoi.png)
+![voronoi diagram](../4-Clustering/2-K-Means/images/voronoi.png)
 
 > infographic by [Jen Looper](https://twitter.com/jenlooper)
 
@@ -86,7 +96,7 @@ Start by taking another look at the songs data.
 
     This data is a little noisy: by observing each column as a boxplot, you can see outliers.
 
-    ![outliers](images/boxplots.png)
+    ![outliers](../4-Clustering/2-K-Means/images/boxplots.png)
 
 You could go through the dataset and remove these outliers, but that would make the data pretty minimal.
 
@@ -182,7 +192,7 @@ Previously, you surmised that, because you have targeted 3 song genres, you shou
 
     Use the `wcss` variable that you built in the previous step to create a chart showing where the 'bend' in the elbow is, which indicates the optimum number of clusters. Maybe it **is** 3!
 
-    ![elbow method](images/elbow.png)
+    ![elbow method](../4-Clustering/2-K-Means/images/elbow.png)
 
 ## Exercise - display the clusters
 
@@ -213,13 +223,13 @@ Previously, you surmised that, because you have targeted 3 song genres, you shou
 
     This model's accuracy is not very good, and the shape of the clusters gives you a hint why. 
 
-    ![clusters](images/clusters.png)
+    ![clusters](../4-Clustering/2-K-Means/images/clusters.png)
 
     This data is too imbalanced, too little correlated and there is too much variance between the column values to cluster well. In fact, the clusters that form are probably heavily influenced or skewed by the three genre categories we defined above. That was a learning process!
 
     In Scikit-learn's documentation, you can see that a model like this one, with clusters not very well demarcated, has a 'variance' problem:
 
-    ![problem models](images/problems.png)
+    ![problem models](../4-Clustering/2-K-Means/images/problems.png)
     > Infographic from Scikit-learn
 
 ## Variance
@@ -248,4 +258,4 @@ Also, take a look at [this handout on K-Means](https://stanford.edu/~cpiech/cs22
 
 ## Assignment
 
-[Try different clustering methods](assignment.md)
+[Try different clustering methods](../33-02-clustering-k-means-assignment/index.html)
