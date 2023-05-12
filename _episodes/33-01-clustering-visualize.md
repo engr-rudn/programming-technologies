@@ -108,7 +108,7 @@ There are over 100 clustering algorithms, and their use depends on the nature of
 
 Clustering as a technique is greatly aided by proper visualization, so let's get started by visualizing our music data. This exercise will help us decide which of the methods of clustering we should most effectively use for the nature of this data.
 
-1. Download the ![notebook](../4-Clustering/1-Visualize/notebook.ipynb){:target="_blank"} 
+1. Download the [notebook](../4-Clustering/1-Visualize/notebook.ipynb){:target="_blank"} 
 1. Open the _notebook.ipynb_ file in this folder.
 
 1. Import the `Seaborn` package for good data visualization.
