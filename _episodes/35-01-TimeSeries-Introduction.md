@@ -1,6 +1,15 @@
-# Introduction to time series forecasting
+---
+title: "Introduction to time series forecasting"
+teaching: 
+exercises:
+questions:
+objectives:
 
-![Summary of time series in a sketchnote](../../sketchnotes/ml-timeseries.png)
+keypoints:
+
+---
+
+![Summary of time series in a sketchnote](../sketchnotes/ml-timeseries.png)
 
 > Sketchnote by [Tomomi Imura](https://www.twitter.com/girlie_mac)
 
