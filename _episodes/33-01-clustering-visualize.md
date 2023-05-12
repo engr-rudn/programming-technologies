@@ -337,4 +337,4 @@ Before you apply clustering algorithms, as we have learned, it's a good idea to 
 
 ## Assignment
 
-[Research other visualizations for clustering](assignment.md)
+[Research other visualizations for clustering](../33-01-clustering-visualize-assignment/index.html){:target="_blank"}

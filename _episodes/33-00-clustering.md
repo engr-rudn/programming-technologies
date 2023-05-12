@@ -25,8 +25,8 @@ In this series of lessons, you will discover new ways to analyze data using clus
 
 ## Lessons
 
-1. [Introduction to clustering](33-01-clustering-visualize/index.html)
-2. [K-Means clustering](33-01-clustering-visualize-assignment/index.html)
+1. [Introduction to clustering](../33-01-clustering-visualize/index.html)
+2. [K-Means clustering](../33-01-clustering-visualize-assignment/index.html)
 
 ## Credits
 
