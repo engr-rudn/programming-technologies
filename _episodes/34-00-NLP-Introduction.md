@@ -1,4 +1,14 @@
-# Introduction to natural language processing
+---
+title: "Introduction to natural language processing"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
+
 
 This lesson covers a brief history and important concepts of *natural language processing*, a subfield of *computational linguistics*.
 
@@ -23,7 +33,7 @@ Computational linguistics is an area of research and development over many decad
 
 If you have ever dictated to your phone instead of typing or asked a virtual assistant a question, your speech was converted into a text form and then processed or *parsed* from the language you spoke. The detected keywords were then processed into a format that the phone or assistant could understand and act on.
 
-![comprehension](images/comprehension.png)
+![comprehension](../5-NLP/1-Introduction-to-NLP/images/comprehension.png)
 > Real linguistic comprehension is hard! Image by [Jen Looper](https://twitter.com/jenlooper)
 
 ### How is this technology made possible?
@@ -133,7 +143,7 @@ Let's create the bot next. We'll start by defining some phrases.
     It was nice talking to you, goodbye!
     ```
 
-    One possible solution to the task is [here](solution/bot.py)
+    One possible solution to the task is [here](../5-NLP/1-Introduction-to-NLP/solution/bot.py)
 
     ✅ Stop and consider
 
@@ -162,4 +172,4 @@ Take a look at the references below as further reading opportunities.
 
 ## Assignment 
 
-[Search for a bot](assignment.md)
+[Search for a bot](../34-00-NLP-Introduction-assignment/index.html)

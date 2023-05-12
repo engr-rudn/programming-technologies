@@ -1,4 +1,13 @@
-# Search for a bot
+---
+title: "Search for a bot"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 ## Instructions
 
