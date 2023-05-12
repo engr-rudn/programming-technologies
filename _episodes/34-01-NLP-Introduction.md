@@ -172,4 +172,4 @@ Take a look at the references below as further reading opportunities.
 
 ## Assignment 
 
-[Search for a bot](../34-00-NLP-Introduction-assignment/index.html)
+[Search for a bot](../34-01-NLP-Introduction-assignment/index.html)

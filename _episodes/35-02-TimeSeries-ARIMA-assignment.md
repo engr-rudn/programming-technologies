@@ -1,4 +1,13 @@
-# A new ARIMA model
+---
+title: "A new ARIMA model"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 ## Instructions
 

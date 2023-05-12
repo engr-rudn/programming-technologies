@@ -1,4 +1,13 @@
-# Try a different dataset
+---
+title: "Try a different dataset"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 ## Instructions
 

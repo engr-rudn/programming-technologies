@@ -14,14 +14,14 @@ There are different ways to analyse a text you are working on. There are tasks y
 
 Probably the first thing most NLP algorithms have to do is to split the text into tokens, or words. While this sounds simple, having to account for punctuation and different languages' word and sentence delimiters can make it tricky. You might have to use various methods to determine demarcations.
 
-![tokenization](images/tokenization.png)
+![tokenization](../5-NLP/2-Tasks/images/tokenization.png)
 > Tokenizing a sentence from **Pride and Prejudice**. Infographic by [Jen Looper](https://twitter.com/jenlooper)
 
 ### Embeddings
 
 [Word embeddings](https://wikipedia.org/wiki/Word_embedding) are a way to convert your text data numerically. Embeddings are done in a way so that words with a similar meaning or words used together cluster together.
 
-![word embeddings](images/embedding.png)
+![word embeddings](../5-NLP/2-Tasks/images/embedding.png)
 > "I have the highest respect for your nerves, they are my old friends." - Word embeddings for a sentence in **Pride and Prejudice**. Infographic by [Jen Looper](https://twitter.com/jenlooper)
 
 ✅ Try [this interesting tool](https://projector.tensorflow.org/) to experiment with word embeddings. Clicking on one word shows clusters of similar words: 'toy' clusters with 'disney', 'lego', 'playstation', and 'console'.
@@ -30,7 +30,7 @@ Probably the first thing most NLP algorithms have to do is to split the text int
 
 Every word that has been tokenized can be tagged as a part of speech - a noun, verb, or adjective. The sentence `the quick red fox jumped over the lazy brown dog` might be POS tagged as fox = noun, jumped = verb.
 
-![parsing](images/parse.png)
+![parsing](../5-NLP/2-Tasks/images/parse.png)
 
 > Parsing a sentence from **Pride and Prejudice**. Infographic by [Jen Looper](https://twitter.com/jenlooper)
 
@@ -80,7 +80,7 @@ It might be easier to visualize it as a sliding box over the sentence. Here it i
 7.   the quick red fox jumped over <u>**the lazy brown**</u> dog
 8.   the quick red fox jumped over the **<u>lazy brown dog</u>**
 
-![n-grams sliding window](images/n-grams.gif)
+![n-grams sliding window](../5-NLP/2-Tasks/images/n-grams.gif)
 
 > N-gram value of 3: Infographic by [Jen Looper](https://twitter.com/jenlooper)
 
@@ -187,7 +187,7 @@ Hmm, that's not great. Can you tell me more about old hounddogs?
 It was nice talking to you, goodbye!
 ```
 
-One possible solution to the task is [here](solution/bot.py)
+One possible solution to the task is [here](../5-NLP/2-Tasks/solution/bot.py)
 
 ✅ Knowledge Check
 
@@ -211,4 +211,4 @@ In the next few lessons you will learn more about sentiment analysis. Research t
 
 ## Assignment 
 
-[Make a bot talk back](assignment.md)
+[Make a bot talk back](../34-02-NLP-Tasks-assignment/index.html)

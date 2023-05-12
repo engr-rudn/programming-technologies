@@ -1,4 +1,13 @@
-# Time Series Forecasting with Support Vector Regressor
+---
+title: "Time Series Forecasting with Support Vector Regressor"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 In the previous lesson, you learned how to use ARIMA model to make time series predictions. Now you'll be looking at Support Vector Regressor model which is a regressor model used to predict continuous data.
 
@@ -24,7 +33,7 @@ In the last lesson you learned about ARIMA, which is a very successful statistic
 
 The first few steps for data preparation are the same as that of the previous lesson on [ARIMA](https://github.com/microsoft/ML-For-Beginners/tree/main/7-TimeSeries/2-ARIMA). 
 
-Open the _/working_ folder in this lesson and find the _notebook.ipynb_ file.[^2]
+Download the _notebook.ipynb_ from [this link](../6-TimeSeries/3-SVR/working/notebook.ipynb).
 
 1. Run the notebook and import the necessary libraries:  [^2]
 
@@ -62,7 +71,7 @@ Open the _/working_ folder in this lesson and find the _notebook.ipynb_ file.[^2
    plt.show()
    ```
 
-   ![full data](images/full-data.png)
+   ![full data](../6-TimeSeries/3-SVR/images/full-data.png)
 
    Now, let's build our SVR model.
 
@@ -88,7 +97,7 @@ Now your data is loaded, so you can separate it into train and test sets. Then y
    plt.show()
    ```
 
-   ![training and testing data](images/train-test.png)
+   ![training and testing data](../6-TimeSeries/3-SVR/images/train-test.png)
 
 
 
@@ -266,7 +275,7 @@ plt.title("Training data prediction")
 plt.show()
 ```
 
-![training data prediction](images/train-data-predict.png)
+![training data prediction](../6-TimeSeries/3-SVR/images/train-data-predict.png)
 
 Print MAPE for training data
 
@@ -289,7 +298,7 @@ plt.xlabel('Timestamp')
 plt.show()
 ```
 
-![testing data prediction](images/test-data-predict.png)
+![testing data prediction](../6-TimeSeries/3-SVR/images/test-data-predict.png)
 
 Print MAPE for testing data
 
@@ -345,7 +354,7 @@ plt.xlabel('Timestamp')
 plt.show()
 ```
 
-![full data prediction](images/full-data-predict.png)
+![full data prediction](../6-TimeSeries/3-SVR/images/full-data-predict.png)
 
 ```python
 print('MAPE: ', mape(Y_pred, Y)*100, '%')
@@ -375,7 +384,7 @@ This lesson was to introduce the application of SVR for Time Series Forecasting.
 
 ## Assignment
 
-[A new SVR model](assignment.md)
+[A new SVR model](../35-03-TimeSeries-SVR-assignment/index.html)
 
 
 

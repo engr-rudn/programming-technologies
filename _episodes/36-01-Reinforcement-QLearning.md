@@ -1,6 +1,15 @@
-# Introduction to Reinforcement Learning and Q-Learning
+---
+title: "Introduction to Reinforcement Learning and Q-Learning"
+teaching: 
+exercises:
+questions:
+objectives:
 
-![Summary of reinforcement in machine learning in a sketchnote](../../sketchnotes/ml-reinforcement.png)
+keypoints:
+
+---
+
+![Summary of reinforcement in machine learning in a sketchnote](../sketchnotes/ml-reinforcement.png)
 > Sketchnote by [Tomomi Imura](https://www.twitter.com/girlie_mac)
 
 Reinforcement learning involves three important concepts: the agent, some states, and a set of actions per state. By executing an action in a specified state, the agent is given a reward. Again imagine the computer game Super Mario. You are Mario, you are in a game level, standing next to a cliff edge. Above you is a coin. You being Mario, in a game level, at a specific position ... that's your state. Moving one step to the right (an action) will take you over the edge, and that would give you a low numerical score. However, pressing the jump button would let you score a point and you would stay alive. That's a positive outcome and that should award you a positive numerical score.
@@ -17,9 +26,9 @@ By using reinforcement learning and a simulator (the game), you can learn how to
 
 In this lesson, we will be experimenting with some code in Python. You should be able to run the Jupyter Notebook code from this lesson, either on your computer or somewhere in the cloud.
 
-You can open [the lesson notebook](notebook.ipynb) and walk through this lesson to build.
+You can open [the lesson notebook](../7-Reinforcement/1-QLearning/notebook.ipynb) and walk through this lesson to build.
 
-> **Note:** If you are opening this code from the cloud, you also need to fetch the [`rlboard.py`](rlboard.py) file, which is used in the notebook code. Add it to the same directory as the notebook.
+> **Note:** If you are opening this code from the cloud, you also need to fetch the [`rlboard.py`](../7-Reinforcement/1-QLearning/rlboard.py) file, which is used in the notebook code. Add it to the same directory as the notebook.
 
 ## Introduction
 
@@ -31,7 +40,7 @@ In this lesson, we will explore the world of **[Peter and the Wolf](https://en.w
 
 For simplicity, let's consider Peter's world to be a square board of size `width` x `height`, like this:
 
-![Peter's Environment](images/environment.png)
+![Peter's Environment](../7-Reinforcement/1-QLearning/images/environment.png)
 
 Each cell in this board can either be:
 
@@ -41,7 +50,7 @@ Each cell in this board can either be:
 * an **apple**, which represents something Peter would be glad to find in order to feed himself.
 * a **wolf**, which is dangerous and should be avoided.
 
-There is a separate Python module, [`rlboard.py`](rlboard.py), which contains the code to work with this environment. Because this code is not important for understanding our concepts, we will import the module and use it to create the sample board (code block 1):
+There is a separate Python module, [`rlboard.py`](../7-Reinforcement/1-QLearning/rlboard.py), which contains the code to work with this environment. Because this code is not important for understanding our concepts, we will import the module and use it to create the sample board (code block 1):
 
 ```python
 from rlboard import *
@@ -129,7 +138,7 @@ Let's first solve our problem by implementing a random walk strategy. With rando
 
     You can also see what Peter's movement looks like during the random walk:
 
-    ![Peter's Random Walk](images/random_walk.gif)
+    ![Peter's Random Walk](../7-Reinforcement/1-QLearning/images/random_walk.gif)
 
 ## Reward function
 
@@ -168,7 +177,7 @@ Q = np.ones((width,height,len(actions)),dtype=np.float)*1.0/len(actions)
 
 Notice that we initialize all the values of the Q-Table with an equal value, in our case - 0.25. This corresponds to the "random walk" policy, because all moves in each state are equally good. We can pass the Q-Table to the `plot` function in order to visualize the table on the board: `m.plot(Q)`.
 
-![Peter's Environment](images/env_init.png)
+![Peter's Environment](../7-Reinforcement/1-QLearning/images/env_init.png)
 
 In the center of each cell there is an "arrow" that indicates the preferred direction of movement. Since all directions are equal, a dot is displayed.
 
@@ -186,7 +195,7 @@ Suppose we are now at the state *s*, and we want to move to the next state *s'*.
 
 This gives the **Bellman formula** for calculating the value of the Q-Table at state *s*, given action *a*:
 
-<img src="images/bellmaneq.gif"/>
+<img src="../7-Reinforcement/1-QLearning/images/bellmaneq.gif"/>
 
 Here γ is the so-called **discount factor** that determines to which extent you should prefer the current reward over the future reward and vice versa.
 
@@ -258,7 +267,7 @@ Run them learning algorithm through 5000 experiments, also called **epochs**: (c
 
 After executing this algorithm, the Q-Table should be updated with values that define the attractiveness of different actions at each step. We can try to visualize the Q-Table by plotting a vector at each cell that will point in the desired direction of movement. For simplicity, we draw a small circle instead of an arrow head.
 
-<img src="images/learned.png"/>
+<img src="../7-Reinforcement/1-QLearning/images/learned.png"/>
 
 ## Checking the policy
 
@@ -302,7 +311,7 @@ After running this code, you should get a much smaller average path length than 
 
 As we have mentioned, the learning process is a balance between exploration and exploration of gained knowledge about the structure of problem space. We have seen that the results of learning (the ability to help an agent to find a short path to the goal) has improved, but it is also interesting to observe how the average path length behaves during the learning process:
 
-<img src="images/lpathlen1.png"/>
+<img src="../7-Reinforcement/1-QLearning/images/lpathlen1.png"/>
 
 The learnings can be summarized as:
 
@@ -316,4 +325,4 @@ Overall, it is important to remember that the success and quality of the learnin
 
 ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/46/)
 
-## Assignment [A More Realistic World](assignment.md)
+## Assignment [A More Realistic World](../36-01-Reinforcement-QLearning-assignment)

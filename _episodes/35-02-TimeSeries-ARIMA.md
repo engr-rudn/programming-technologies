@@ -1,4 +1,13 @@
-# Time series forecasting with ARIMA
+---
+title: "Time series forecasting with ARIMA"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 In the previous lesson, you learned a bit about time series forecasting and loaded a dataset showing the fluctuations of electrical load over a time period.
 
@@ -34,7 +43,7 @@ Bottom line: ARIMA is used to make a model fit the special form of time series d
 
 ## Exercise - build an ARIMA model
 
-Open the _/working_ folder in this lesson and find the _notebook.ipynb_ file.
+Download the _notebook.ipynb_ file [from this link](../6-TimeSeries/2-ARIMA/working/notebook.ipynb) .
 
 1. Run the notebook to load the `statsmodels` Python library; you will need this for ARIMA models.
 
@@ -105,7 +114,7 @@ Now your data is loaded, so you can separate it into train and test sets. You'll
     plt.show()
     ```
 
-    ![training and testing data](images/train-test.png)
+    ![training and testing data](../6-TimeSeries/2-ARIMA/images/train-test.png)
 
     Therefore, using a relatively small window of time for training the data should be sufficient.
 
@@ -148,11 +157,11 @@ Now, you need to prepare the data for training by performing filtering and scali
     plt.show()
     ```
 
-    ![original](images/original.png)
+    ![original](../6-TimeSeries/2-ARIMA/images/original.png)
 
     > The original data
 
-    ![scaled](images/scaled.png)
+    ![scaled](../6-TimeSeries/2-ARIMA/images/scaled.png)
 
     > The scaled data
 
@@ -313,7 +322,7 @@ Check the accuracy of your model by testing its mean absolute percentage error (
 
 > **🧮 Show me the math**
 >
-> ![MAPE](images/mape.png)
+> ![MAPE](../6-TimeSeries/2-ARIMA/images/mape.png)
 >
 >  [MAPE](https://www.linkedin.com/pulse/what-mape-mad-msd-time-series-allameh-statistics/) is used to show prediction accuracy as a ratio defined by the above formula. The difference between actual<sub>t</sub> and predicted<sub>t</sub> is divided by the actual<sub>t</sub>. "The absolute value in this calculation is summed for every forecasted point in time and divided by the number of fitted points n." [wikipedia](https://wikipedia.org/wiki/Mean_absolute_percentage_error)
 
@@ -373,7 +382,7 @@ Check the accuracy of your model by testing its mean absolute percentage error (
     plt.show()
     ```
 
-    ![a time series model](images/accuracy.png)
+    ![a time series model](../6-TimeSeries/2-ARIMA/images/accuracy.png)
 
 🏆 A very nice plot, showing a model with good accuracy. Well done!
 
@@ -391,4 +400,4 @@ This lesson touches on only the basics of Time Series Forecasting with ARIMA. Ta
 
 ## Assignment
 
-[A new ARIMA model](assignment.md)
+[A new ARIMA model](../35-02-TimeSeries-ARIMA-assignment/index.html)

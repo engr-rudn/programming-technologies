@@ -1,4 +1,13 @@
-# CartPole Skating
+---
+title: "CartPole Skating"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 The problem we have been solving in the previous lesson might seem like a toy problem, not really applicable for real life scenarios. This is not the case, because many real world problems also share this scenario - including playing Chess or Go. They are similar, because we also have a board with given rules and a **discrete state**.
 https://white-water-09ec41f0f.azurestaticapps.net/
@@ -10,13 +19,13 @@ In this lesson we will apply the same principles of Q-Learning to a problem with
 
 > **Problem**: If Peter wants to escape from the wolf, he needs to be able to move faster. We will see how Peter can learn to skate, in particular, to keep balance, using Q-Learning.
 
-![The great escape!](images/escape.png)
+![The great escape!](../7-Reinforcement/2-Gym/images/escape.png)
 
 > Peter and his friends get creative to escape the wolf! Image by [Jen Looper](https://twitter.com/jenlooper)
 
 We will use a simplified version of balancing known as a **CartPole** problem. In the cartpole world, we have a horizontal slider that can move left or right, and the goal is to balance a vertical pole on top of the slider.
 
-<img alt="a cartpole" src="images/cartpole.png" width="200"/>
+<img alt="a cartpole" src="../7-Reinforcement/2-Gym/images/cartpole.png" width="200"/>
 
 ## Prerequisites
 
@@ -74,7 +83,7 @@ To see how the environment works, let's run a short simulation for 100 steps. At
 
     You should be seeing something similar to this image:
 
-    ![non-balancing cartpole](images/cartpole-nobalance.gif)
+    ![non-balancing cartpole](../7-Reinforcement/2-Gym/images/cartpole-nobalance.gif)
 
 1. During simulation, we need to get observations in order to decide how to act. In fact, the step function returns current observations, a reward function, and the done flag that indicates whether it makes sense to continue the simulation or not: (code block 4)
 
@@ -276,7 +285,7 @@ During training, we have collected the cumulative reward value at each of the it
 plt.plot(rewards)
 ```
 
-![raw  progress](images/train_progress_raw.png)
+![raw  progress](../7-Reinforcement/2-Gym/images/train_progress_raw.png)
 
 From this graph, it is not possible to tell anything, because due to the nature of stochastic training process the length of training sessions varies greatly. To make more sense of this graph, we can calculate the **running average** over a series of experiments, let's say 100. This can be done conveniently using `np.convolve`: (code block 12)
 
@@ -287,7 +296,7 @@ def running_average(x,window):
 plt.plot(running_average(rewards,100))
 ```
 
-![training progress](images/train_progress_runav.png)
+![training progress](../7-Reinforcement/2-Gym/images/train_progress_runav.png)
 
 ## Varying hyperparameters
 
@@ -319,7 +328,7 @@ env.close()
 
 You should see something like this:
 
-![a balancing cartpole](images/cartpole-balance.gif)
+![a balancing cartpole](../7-Reinforcement/2-Gym/images/cartpole-balance.gif)
 
 ---
 
@@ -331,7 +340,7 @@ You should see something like this:
 
 ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/48/)
 
-## Assignment: [Train a Mountain Car](assignment.md)
+## Assignment: [Train a Mountain Car](../36-02-Reinforcement-Gym-assignment/index.html)
 
 ## Conclusion
 

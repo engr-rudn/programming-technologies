@@ -1,10 +1,19 @@
-# Introduction to reinforcement learning
+---
+title: "Introduction to reinforcement learning"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 Reinforcement learning, RL, is seen as one of the basic machine learning paradigms, next to supervised learning and unsupervised learning. RL is all about decisions: delivering the right decisions or at least learning from them.
 
 Imagine you have a simulated environment such as the stock market. What happens if you impose a given regulation? Does it have a positive or negative effect? If something negative happens, you need to take this _negative reinforcement_, learn from it, and change course. If it's a positive outcome, you need to build on that _positive reinforcement_.
 
-![peter and the wolf](images/peter.png)
+![peter and the wolf](../7-Reinforcement/images/peter.png)
 
 > Peter and his friends need to escape the hungry wolf! Image by [Jen Looper](https://twitter.com/jenlooper)
 
@@ -45,8 +54,8 @@ The main difference between other types of machine learning and RL is that in RL
 
 ## Lessons
 
-1. [Introduction to reinforcement learning and Q-Learning](1-QLearning/README.md)
-2. [Using a gym simulation environment](2-Gym/README.md)
+1. [Introduction to reinforcement learning and Q-Learning](../36-01-Reinforcement-QLearning/index.html)
+2. [Using a gym simulation environment](../36-02-Reinforcement-Gym/index.html)
 
 ## Credits
 

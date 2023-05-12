@@ -1,4 +1,13 @@
-# Sentiment analysis with hotel reviews - processing the data
+---
+title: "Sentiment analysis with hotel reviews - processing the data"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 In this section you will use the techniques in the previous lessons to do some exploratory data analysis of a large dataset. Once you have a good understanding of the usefulness of the various columns, you will learn: 
 
@@ -137,7 +146,7 @@ On the possibility that these hotel might be an outlier, and that maybe most of 
 
 That's enough examining the data visually, now you'll write some code and get some answers! This section uses the pandas library. Your very first task is to ensure you can load and read the CSV data. The pandas library has a fast CSV loader, and the result is placed in a dataframe, as in previous lessons. The CSV we are loading has over half a million rows, but only 17 columns. Pandas gives you lots of powerful ways to interact with a dataframe, including the ability to perform operations on every row. 
 
-From here on in this lesson, there will be code snippets and some explanations of the code and some discussion about what the results mean. Use the included _notebook.ipynb_ for your code.
+From here on in this lesson, there will be code snippets and some explanations of the code and some discussion about what the results mean. [Download](../5-NLP/4-Hotel-Reviews-1/notebook.ipynb) and use the _notebook.ipynb_ for your code.
 
 Let's start with loading the data file you be using:
 
@@ -401,4 +410,4 @@ Take [this Learning Path on NLP](https://docs.microsoft.com/learn/paths/explore-
 
 ## Assignment 
 
-[NLTK](assignment.md)
+[NLTK](../34-04-NLP-Hotel-Reviews-assignment/index.html)

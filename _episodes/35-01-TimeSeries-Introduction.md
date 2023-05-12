@@ -103,7 +103,7 @@ The data might display an abrupt change that might need further analysis. The ab
 
 ✅ Here is a [sample time series plot](https://www.kaggle.com/kashnitsky/topic-9-part-1-time-series-analysis-in-python) showing daily in-game currency spent over a few years. Can you identify any of the characteristics listed above in this data?
 
-![In-game currency spend](./images/currency.png)
+![In-game currency spend](../6-TimeSeries/1-Introduction/images/currency.png)
 
 ## Exercise - getting started with power usage data
 
@@ -151,7 +151,7 @@ Let's get started creating a time series model to predict future power usage giv
     plt.show()
     ```
 
-    ![energy plot](images/energy-plot.png)
+    ![energy plot](../6-TimeSeries/1-Introduction/images/energy-plot.png)
 
 4. Now, plot the first week of July 2014, by providing it as input to the `energy` in `[from date]: [to date]` pattern:
 
@@ -162,7 +162,7 @@ Let's get started creating a time series model to predict future power usage giv
     plt.show()
     ```
 
-    ![july](images/july-2014.png)
+    ![july](../6-TimeSeries/1-Introduction/images/july-2014.png)
 
     A beautiful plot! Take a look at these plots and see if you can determine any of the characteristics listed above. What can we surmise by visualizing the data?
 
@@ -182,4 +182,4 @@ Although we won't cover them here, neural networks are sometimes used to enhance
 
 ## Assignment
 
-[Visualize some more time series](assignment.md)
+[Visualize some more time series](../35-01-TimeSeries-Introduction-assignment/index.html)

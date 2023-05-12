@@ -1,4 +1,13 @@
-# A More Realistic World
+---
+title: "A More Realistic World"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 In our situation, Peter was able to move around almost without getting tired or hungry. In a more realistic world, we has to sit down and rest from time to time, and also to feed himself. Let's make our world more realistic, by implementing the following rules:
 
@@ -9,11 +18,11 @@ In our situation, Peter was able to move around almost without getting tired or 
 5. In order to kill the wolf, Peter needs to have certain levels of energy and fatigue, otherwise he loses the battle.
 ## Instructions
 
-Use the original [notebook.ipynb](notebook.ipynb) notebook as a starting point for your solution.
+Use the original [notebook.ipynb](../7-Reinforcement/1-QLearning/notebook.ipynb) notebook as a starting point for your solution.
 
 Modify the reward function above according to the rules of the game, run the reinforcement learning algorithm to learn the best strategy for winning the game, and compare the results of random walk with your algorithm in terms of number of games won and lost.
 
-> **Note**: In your new world, the state is more complex, and in addition to human position also includes fatigue and energy levels. You may chose to represent the state as a tuple (Board,energy,fatigue), or define a class for the state (you may also want to derive it from `Board`), or even modify the original `Board` class inside [rlboard.py](rlboard.py).
+> **Note**: In your new world, the state is more complex, and in addition to human position also includes fatigue and energy levels. You may chose to represent the state as a tuple (Board,energy,fatigue), or define a class for the state (you may also want to derive it from `Board`), or even modify the original `Board` class inside [rlboard.py](../7-Reinforcement/1-QLearning/rlboard.py).
 
 In your solution, please keep the code responsible for random walk strategy, and compare the results of your algorithm with random walk at the end.
 

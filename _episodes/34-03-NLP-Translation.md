@@ -1,4 +1,14 @@
-# Translation and sentiment analysis with ML
+---
+title: "Translation and sentiment analysis with ML"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
+
 
 In the previous lessons you learned how to build a basic bot using `TextBlob`, a library that embeds ML behind-the-scenes to perform basic NLP tasks such as noun phrase extraction. Another important challenge in computational linguistics is accurate _translation_ of a sentence from one spoken or written language to another.
 
@@ -47,7 +57,7 @@ For instance, consider the case of *Pride and Prejudice*, a well-known English n
 
 For instance, when an English phrase such as `I have no money` is translated literally to French, it might become `Je n'ai pas de monnaie`. "Monnaie" is a tricky french 'false cognate', as 'money' and 'monnaie' are not synonymous. A better translation that a human might make would be `Je n'ai pas d'argent`, because it better conveys the meaning that you have no money (rather than 'loose change' which is the meaning of 'monnaie').
 
-![monnaie](images/monnaie.png)
+![monnaie](../5-NLP/3-Translation-Sentiment/monnaie.png)
 
 > Image by [Jen Looper](https://twitter.com/jenlooper)
 
@@ -143,7 +153,7 @@ Your task is to determine, using sentiment polarity, if *Pride and Prejudice* ha
    1. If the polarity is 1 or -1 store the sentence in an array or list of positive or negative messages
 5. At the end, print out all the positive sentences and negative sentences (separately) and the number of each.
 
-Here is a sample [solution](solution/notebook.ipynb).
+Here is a sample [solution](../5-NLP/3-Translation-Sentiment/solution/notebook.ipynb).
 
 ✅ Knowledge Check
 
@@ -184,4 +194,4 @@ There are many ways to extract sentiment from text. Think of the business applic
 
 ## Assignment 
 
-[Poetic license](assignment.md)
+[Poetic license](../34-03-NLP-Translation-assignment/index.html)

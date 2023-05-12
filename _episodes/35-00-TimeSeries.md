@@ -1,4 +1,13 @@
-# Introduction to time series forecasting
+---
+title: "Getting started with natural language processing"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 What is time series forecasting? It's about predicting future events by analyzing trends of the past.
 
@@ -8,15 +17,15 @@ In these two lessons, you will be introduced to time series forecasting, a somew
 
 Our regional focus is electrical usage in the world, an interesting dataset to learn about forecasting future power usage based on patterns of past load. You can see how this kind of forecasting can be extremely helpful in a business environment.
 
-![electric grid](images/electric-grid.jpg)
+![electric grid](../6-TimeSeries/images/electric-grid.jpg)
 
 Photo by [Peddi Sai hrithik](https://unsplash.com/@shutter_log?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) of electrical towers on a road in Rajasthan on [Unsplash](https://unsplash.com/s/photos/electric-india?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ## Lessons
 
-1. [Introduction to time series forecasting](1-Introduction/README.md)
-2. [Building ARIMA time series models](2-ARIMA/README.md)
-3. [Building Support Vector Regressor for time series forcasting](3-SVR/README.md)
+1. [Introduction to time series forecasting](../35-01-TimeSeries-Introduction/index.html)
+2. [Building ARIMA time series models](../35-02-TimeSeries-ARIMA/index.html)
+3. [Building Support Vector Regressor for time series forcasting](../35-03-TimeSeries-SVR/index.html)
 
 ## Credits
 

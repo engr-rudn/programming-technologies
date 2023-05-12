@@ -1,4 +1,13 @@
-# A ML Scavenger Hunt
+---
+title: "A ML Scavenger Hunt"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 ## Instructions
 
