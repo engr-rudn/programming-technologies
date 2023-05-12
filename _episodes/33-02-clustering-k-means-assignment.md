@@ -1,4 +1,13 @@
-# Try different clustering methods
+---
+title: "Try different clustering methods"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 ## Instructions
 
