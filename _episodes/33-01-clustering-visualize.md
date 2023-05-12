@@ -1,4 +1,13 @@
-# Introduction to clustering
+---
+title: "Introduction to clustering"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 Clustering is a type of [Unsupervised Learning](https://wikipedia.org/wiki/Unsupervised_learning) that presumes that a dataset is unlabelled or that its inputs are not matched with predefined outputs. It uses various algorithms to sort through unlabeled data and provide groupings according to patterns it discerns in the data. 
 
@@ -58,7 +67,7 @@ Deepen your understanding of clustering techniques in this [Learn module](https:
 >
 >'Flat' in this context refers to Euclidean geometry (parts of which are taught as 'plane' geometry), and non-flat refers to non-Euclidean geometry. What does geometry have to do with machine learning? Well, as two fields that are rooted in mathematics, there must be a common way to measure distances between points in clusters, and that can be done in a 'flat' or 'non-flat' way, depending on the nature of the data. [Euclidean distances](https://wikipedia.org/wiki/Euclidean_distance) are measured as the length of a line segment between two points. [Non-Euclidean distances](https://wikipedia.org/wiki/Non-Euclidean_geometry) are measured along a curve. If your data, visualized, seems to not exist on a plane, you might need to use a specialized algorithm to handle it.
 >
-![Flat vs Nonflat Geometry Infographic](./images/flat-nonflat.png)
+![Flat vs Nonflat Geometry Infographic](../4-Clustering/1-Visualize/images/flat-nonflat.png)
 > Infographic by [Dasani Madipalli](https://twitter.com/dasani_decoded)
 > 
 > 🎓 ['Distances'](https://web.stanford.edu/class/cs345a/slides/12-clustering.pdf)
@@ -81,12 +90,12 @@ There are over 100 clustering algorithms, and their use depends on the nature of
 
 - **Hierarchical clustering**. If an object is classified by its proximity to a nearby object, rather than to one farther away, clusters are formed based on their members' distance to and from other objects. Scikit-learn's agglomerative clustering is hierarchical.
 
-   ![Hierarchical clustering Infographic](./images/hierarchical.png)
+   ![Hierarchical clustering Infographic](../4-Clustering/1-Visualize/images/hierarchical.png)
    > Infographic by [Dasani Madipalli](https://twitter.com/dasani_decoded)
 
 - **Centroid clustering**. This popular algorithm requires the choice of 'k', or the number of clusters to form, after which the algorithm determines the center point of a cluster and gathers data around that point. [K-means clustering](https://wikipedia.org/wiki/K-means_clustering) is a popular version of centroid clustering. The center is determined by the nearest mean, thus the name. The squared distance from the cluster is minimized.
 
-   ![Centroid clustering Infographic](./images/centroid.png)
+   ![Centroid clustering Infographic](../4-Clustering/1-Visualize/images/centroid.png)
    > Infographic by [Dasani Madipalli](https://twitter.com/dasani_decoded)
 
 - **Distribution-based clustering**. Based in statistical modeling, distribution-based clustering centers on determining the probability that a data point belongs to a cluster, and assigning it accordingly. Gaussian mixture methods belong to this type.
@@ -99,6 +108,7 @@ There are over 100 clustering algorithms, and their use depends on the nature of
 
 Clustering as a technique is greatly aided by proper visualization, so let's get started by visualizing our music data. This exercise will help us decide which of the methods of clustering we should most effectively use for the nature of this data.
 
+1. Download the ![notebook](../4-Clustering/1-Visualize/notebook.ipynb){:target="_blank"} 
 1. Open the _notebook.ipynb_ file in this folder.
 
 1. Import the `Seaborn` package for good data visualization.
@@ -113,7 +123,7 @@ Clustering as a technique is greatly aided by proper visualization, so let's get
     import matplotlib.pyplot as plt
     import pandas as pd
     
-    df = pd.read_csv("../data/nigerian-songs.csv")
+    df = pd.read_csv("../4-Clustering/data/nigerian-songs.csv")
     df.head()
     ```
 
@@ -222,7 +232,7 @@ Look at the general values of the data. Note that popularity can be '0', which s
     plt.title('Top genres',color = 'blue')
     ```
 
-    ![most popular](./images/popular.png)
+    ![most popular](../4-Clustering/1-Visualize/images/popular.png)
 
 ✅ If you'd like to see more top values, change the top `[:5]` to a bigger value, or remove it to see all.
 
@@ -241,7 +251,7 @@ Note, when the top genre is described as 'Missing', that means that Spotify did 
 
     Now recheck the genres:
 
-    ![most popular](images/all-genres.png)
+    ![most popular](../4-Clustering/1-Visualize/images/all-genres.png)
 
 1. By far, the top three genres dominate this dataset. Let's concentrate on `afro dancehall`, `afropop`, and `nigerian pop`, additionally filter the dataset to remove anything with a 0 popularity value (meaning it was not classified with a popularity in the dataset and can be considered noise for our purposes):
 
@@ -263,7 +273,7 @@ Note, when the top genre is described as 'Missing', that means that Spotify did 
     sns.heatmap(corrmat, vmax=.8, square=True)
     ```
 
-    ![correlations](images/correlation.png)
+    ![correlations](../4-Clustering/1-Visualize/images/correlation.png)
 
     The only strong correlation is between `energy` and `loudness`, which is not too surprising, given that loud music is usually pretty energetic. Otherwise, the correlations are relatively weak. It will be interesting to see what a clustering algorithm can make of this data.
 
@@ -295,7 +305,7 @@ Are these three genres significantly different in the perception of their dancea
 
     In general, the three genres align loosely in terms of their popularity and danceability. Determining clusters in this loosely-aligned data will be a challenge:
 
-    ![distribution](images/distribution.png)
+    ![distribution](../4-Clustering/1-Visualize/images/distribution.png)
 
 1. Create a scatter plot:
 
@@ -307,7 +317,7 @@ Are these three genres significantly different in the perception of their dancea
 
     A scatterplot of the same axes shows a similar pattern of convergence
 
-    ![Facetgrid](images/facetgrid.png)
+    ![Facetgrid](../4-Clustering/1-Visualize/images/facetgrid.png)
 
 In general, for clustering, you can use scatterplots to show clusters of data, so mastering this type of visualization is very useful. In the next lesson, we will take this filtered data and use k-means clustering to discover groups in this data that see to overlap in interesting ways.
 

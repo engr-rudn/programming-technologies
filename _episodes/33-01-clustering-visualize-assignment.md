@@ -1,4 +1,13 @@
-# Research other visualizations for clustering
+---
+title: "Research other visualizations for clustering"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 ## Instructions
 

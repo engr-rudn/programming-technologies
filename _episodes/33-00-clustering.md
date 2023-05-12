@@ -1,4 +1,13 @@
-# Clustering models for machine learning
+---
+title: "Clustering models for machine learning"
+teaching: 
+exercises:
+questions:
+objectives:
+
+keypoints:
+
+---
 
 Clustering is a machine learning task where it looks to find objects that resemble one another and group these into groups called clusters.  What differs clustering from other approaches in machine learning, is that things happen automatically, in fact, it's fair to say it's the opposite of supervised learning. 
 
@@ -6,7 +15,7 @@ Clustering is a machine learning task where it looks to find objects that resemb
 
 Nigeria's diverse audience has diverse musical tastes. Using data scraped from Spotify (inspired by [this article](https://towardsdatascience.com/country-wise-visual-analysis-of-music-taste-using-spotify-api-seaborn-in-python-77f5b749b421), let's look at some music popular in Nigeria. This dataset includes data about various songs' 'danceability' score, 'acousticness', loudness, 'speechiness', popularity and energy. It will be interesting to discover patterns in this data!
 
-![A turntable](./images/turntable.jpg)
+![A turntable](../4-Clustering/images/turntable.jpg)
 
 > Photo by <a href="https://unsplash.com/@marcelalaskoski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marcela Laskoski</a> on <a href="https://unsplash.com/s/photos/nigerian-music?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
@@ -16,8 +25,8 @@ In this series of lessons, you will discover new ways to analyze data using clus
 
 ## Lessons
 
-1. [Introduction to clustering](1-Visualize/README.md)
-2. [K-Means clustering](2-K-Means/README.md)
+1. [Introduction to clustering](33-01-clustering-visualize/index.html)
+2. [K-Means clustering](33-01-clustering-visualize-assignment/index.html)
 
 ## Credits
 
