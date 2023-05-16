@@ -30,7 +30,7 @@ Classification uses various algorithms to determine other ways of determining a 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/19/)
 
 > ### [This lesson is available in R!](./solution/R/lesson_10-R.ipynb)
-{: callout}
+{: .callout}
 
 ### Introduction
 
