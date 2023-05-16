@@ -59,7 +59,7 @@ Scikit-learn offers several different algorithms to use to classify data, depend
 
 ## Exercise - clean and balance your data
 
-The first task at hand, before starting this project, is to clean and **balance** your data to get better results. Start with the blank _notebook.ipynb_ file in the root of this folder.
+The first task at hand, before starting this project, is to clean and **balance** your data to get better results. Start with the blank _notebook.ipynb and [download and save the csv file](../3-Classification/data/cuisines.csv) on the folder that contains your _notebook.ipynb file.
 
 The first thing to install is [imblearn](https://imbalanced-learn.org/stable/). This is a Scikit-learn package that will allow you to better balance the data (you will learn more about this task in a minute).
 
@@ -84,7 +84,7 @@ The first thing to install is [imblearn](https://imbalanced-learn.org/stable/). 
 1. The next task will be to import the data:
 
     ```python
-    df  = pd.read_csv('../data/cuisines.csv')
+    df  = pd.read_csv('./cuisines.csv')
     ```
 
    Using `read_csv()` will read the content of the csv file _cusines.csv_ and place it in the variable `df`.
@@ -285,7 +285,7 @@ Now that you have cleaned the data, use [SMOTE](https://imbalanced-learn.org/dev
     ```python
     transformed_df.head()
     transformed_df.info()
-    transformed_df.to_csv("../data/cleaned_cuisines.csv")
+    transformed_df.to_csv(".\cleaned_cuisines.csv")
     ```
 
     This fresh CSV can now be found in the root data folder.
