@@ -27,8 +27,7 @@ Remember:
 
 Classification uses various algorithms to determine other ways of determining a data point's label or class. Let's work with this cuisine data to see whether, by observing a group of ingredients, we can determine its cuisine of origin.
 
-## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/19/)
-
+> ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/19/)
 > ### [This lesson is available in R!](./solution/R/lesson_10-R.ipynb)
 {: .callout}
 
@@ -40,7 +39,7 @@ To state the process in a more scientific way, your classification method create
 
 ![binary vs. multiclass classification](../3-Classification/1-Introduction/images/binary-multiclass.png)
 
-> Binary vs. multiclass problems for classification algorithms to handle. Infographic by [Jen Looper](https://twitter.com/jenlooper)
+* Binary vs. multiclass problems for classification algorithms to handle. Infographic by [Jen Looper](https://twitter.com/jenlooper)
 
 Before starting the process of cleaning our data, visualizing it, and prepping it for our ML tasks, let's learn a bit about the various ways machine learning can be leveraged to classify data.
 
@@ -50,7 +49,7 @@ Derived from [statistics](https://wikipedia.org/wiki/Statistical_classification)
 
 [![Crazy mystery baskets](https://img.youtube.com/vi/GuTeDbaNoEU/0.jpg)](https://youtu.be/GuTeDbaNoEU "Crazy mystery baskets")
 
-> 🎥 Click the image above for a video.The whole premise of the show 'Chopped' is the 'mystery basket' where chefs have to make some dish out of a random choice of ingredients. Surely a ML model would have helped!
+* 🎥 Click the image above for a video.The whole premise of the show 'Chopped' is the 'mystery basket' where chefs have to make some dish out of a random choice of ingredients. Surely a ML model would have helped!
 
 ## Hello 'classifier'
 
@@ -295,7 +294,8 @@ Now that you have cleaned the data, use [SMOTE](https://imbalanced-learn.org/dev
 > This curriculum contains several interesting datasets. Dig through the `data` folders and see if any contain datasets that would be appropriate for binary or multi-class classification? What questions would you ask of this dataset?
 {: .challenge}
 
-## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/20/)
+> ## [Post-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/20/)
+{: .callout}
 
 ## Review & Self Study
 
