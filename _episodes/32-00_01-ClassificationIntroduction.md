@@ -18,7 +18,7 @@ Classification is a form of [supervised learning](https://wikipedia.org/wiki/Sup
 
 [![Introduction to classification](https://img.youtube.com/vi/eg8DJYwdMyg/0.jpg)](https://youtu.be/eg8DJYwdMyg "Introduction to classification")
 
-> 🎥 Click the image above for a video: MIT's John Guttag introduces classification
+* 🎥 Click the image above for a video: MIT's John Guttag introduces classification
 
 Remember:
 
@@ -30,6 +30,7 @@ Classification uses various algorithms to determine other ways of determining a 
 ## [Pre-lecture quiz](https://gray-sand-07a10f403.1.azurestaticapps.net/quiz/19/)
 
 > ### [This lesson is available in R!](./solution/R/lesson_10-R.ipynb)
+{: callout}
 
 ### Introduction
 
